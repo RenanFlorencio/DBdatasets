@@ -1,0 +1,175 @@
+2025-01-27 16:49:34,931 INFO    Thread-312 (_run_job):7822 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-27 16:49:34,932 INFO    Thread-312 (_run_job):7822 [wandb_setup.py:_flush():68] Configure stats pid to 7822
+2025-01-27 16:49:34,933 INFO    Thread-312 (_run_job):7822 [wandb_setup.py:_flush():68] Loading settings from /home/renan/.config/wandb/settings
+2025-01-27 16:49:34,934 INFO    Thread-312 (_run_job):7822 [wandb_setup.py:_flush():68] Loading settings from /home/renan/Documents/datasets/dbdataset/wandb/settings
+2025-01-27 16:49:34,935 INFO    Thread-312 (_run_job):7822 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-27 16:49:34,935 INFO    Thread-312 (_run_job):7822 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_164934-8k7pdrg9/logs/debug.log
+2025-01-27 16:49:34,936 INFO    Thread-312 (_run_job):7822 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_164934-8k7pdrg9/logs/debug-internal.log
+2025-01-27 16:49:34,937 INFO    Thread-312 (_run_job):7822 [wandb_init.py:init():743] calling init triggers
+2025-01-27 16:49:34,938 INFO    Thread-312 (_run_job):7822 [wandb_init.py:init():748] wandb.init called with sweep_config: {'batch_size': 32, 'epochs': 25}
+config: {}
+2025-01-27 16:49:34,939 INFO    Thread-312 (_run_job):7822 [wandb_init.py:init():768] wandb.init() called when a run is still active
+2025-01-27 16:49:34,940 ERROR   Thread-312 (_run_job):7822 [wandb_init.py:init():1454] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1444, in init
+    return wi.init(run_settings, run_config)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 771, in init
+    with telemetry.context() as tel:
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 758, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 771, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 101, in _publish_telemetry
+    self._publish(rec)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 47, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 222, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-01-27 16:49:34,952 INFO    Thread-312 (_run_job):7822 [wandb_run.py:_finish():2134] finishing run renan-florencio-unicamp/DriverBehavior/q33cbq22
+2025-01-27 16:49:40,219 INFO    Thread-314 (_run_job):7822 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-27 16:49:40,219 INFO    Thread-314 (_run_job):7822 [wandb_setup.py:_flush():68] Configure stats pid to 7822
+2025-01-27 16:49:40,219 INFO    Thread-314 (_run_job):7822 [wandb_setup.py:_flush():68] Loading settings from /home/renan/.config/wandb/settings
+2025-01-27 16:49:40,220 INFO    Thread-314 (_run_job):7822 [wandb_setup.py:_flush():68] Loading settings from /home/renan/Documents/datasets/dbdataset/wandb/settings
+2025-01-27 16:49:40,220 INFO    Thread-314 (_run_job):7822 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-27 16:49:40,220 INFO    Thread-314 (_run_job):7822 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_164940-1tb6szlq/logs/debug.log
+2025-01-27 16:49:40,221 INFO    Thread-314 (_run_job):7822 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_164940-1tb6szlq/logs/debug-internal.log
+2025-01-27 16:49:40,221 INFO    Thread-314 (_run_job):7822 [wandb_init.py:init():743] calling init triggers
+2025-01-27 16:49:40,222 INFO    Thread-314 (_run_job):7822 [wandb_init.py:init():748] wandb.init called with sweep_config: {'batch_size': 32, 'epochs': 50}
+config: {}
+2025-01-27 16:49:40,222 INFO    Thread-314 (_run_job):7822 [wandb_init.py:init():768] wandb.init() called when a run is still active
+2025-01-27 16:49:40,222 ERROR   Thread-314 (_run_job):7822 [wandb_init.py:init():1454] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1444, in init
+    return wi.init(run_settings, run_config)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 771, in init
+    with telemetry.context() as tel:
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 758, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 771, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 101, in _publish_telemetry
+    self._publish(rec)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 47, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 222, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-01-27 16:49:40,230 INFO    Thread-314 (_run_job):7822 [wandb_run.py:_finish():2134] finishing run renan-florencio-unicamp/DriverBehavior/q33cbq22
+2025-01-27 16:49:50,699 INFO    Thread-316 (_run_job):7822 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-27 16:49:50,699 INFO    Thread-316 (_run_job):7822 [wandb_setup.py:_flush():68] Configure stats pid to 7822
+2025-01-27 16:49:50,700 INFO    Thread-316 (_run_job):7822 [wandb_setup.py:_flush():68] Loading settings from /home/renan/.config/wandb/settings
+2025-01-27 16:49:50,700 INFO    Thread-316 (_run_job):7822 [wandb_setup.py:_flush():68] Loading settings from /home/renan/Documents/datasets/dbdataset/wandb/settings
+2025-01-27 16:49:50,701 INFO    Thread-316 (_run_job):7822 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-27 16:49:50,701 INFO    Thread-316 (_run_job):7822 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_164950-81vywmgg/logs/debug.log
+2025-01-27 16:49:50,702 INFO    Thread-316 (_run_job):7822 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_164950-81vywmgg/logs/debug-internal.log
+2025-01-27 16:49:50,702 INFO    Thread-316 (_run_job):7822 [wandb_init.py:init():743] calling init triggers
+2025-01-27 16:49:50,703 INFO    Thread-316 (_run_job):7822 [wandb_init.py:init():748] wandb.init called with sweep_config: {'batch_size': 64, 'epochs': 10}
+config: {}
+2025-01-27 16:49:50,703 INFO    Thread-316 (_run_job):7822 [wandb_init.py:init():768] wandb.init() called when a run is still active
+2025-01-27 16:49:50,704 ERROR   Thread-316 (_run_job):7822 [wandb_init.py:init():1454] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1444, in init
+    return wi.init(run_settings, run_config)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 771, in init
+    with telemetry.context() as tel:
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 758, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 771, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 101, in _publish_telemetry
+    self._publish(rec)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 47, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 222, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-01-27 16:49:50,711 INFO    Thread-316 (_run_job):7822 [wandb_run.py:_finish():2134] finishing run renan-florencio-unicamp/DriverBehavior/q33cbq22
+2025-01-27 16:49:51,616 INFO    MainThread:7822 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 16:49:51,617 INFO    MainThread:7822 [wandb_init.py:_pause_backend():541] pausing backend
+2025-01-27 16:51:01,069 INFO    MainThread:7822 [wandb_init.py:_resume_backend():546] resuming backend
+2025-01-27 16:51:01,793 INFO    MainThread:7822 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 16:51:01,794 INFO    MainThread:7822 [wandb_init.py:_pause_backend():541] pausing backend
+2025-01-27 16:51:02,899 INFO    MainThread:7822 [wandb_init.py:_resume_backend():546] resuming backend
+2025-01-27 16:51:03,416 INFO    MainThread:7822 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 16:51:03,418 INFO    MainThread:7822 [wandb_init.py:_pause_backend():541] pausing backend
+2025-01-27 16:51:03,915 INFO    MainThread:7822 [wandb_init.py:_resume_backend():546] resuming backend
+2025-01-27 16:51:03,964 INFO    MainThread:7822 [pyagent.py:run():322] Starting sweep agent: entity=None, project=None, count=10
+2025-01-27 16:51:05,046 INFO    Thread-319 (_run_job):7822 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-27 16:51:05,047 INFO    Thread-319 (_run_job):7822 [wandb_setup.py:_flush():68] Configure stats pid to 7822
+2025-01-27 16:51:05,048 INFO    Thread-319 (_run_job):7822 [wandb_setup.py:_flush():68] Loading settings from /home/renan/.config/wandb/settings
+2025-01-27 16:51:05,048 INFO    Thread-319 (_run_job):7822 [wandb_setup.py:_flush():68] Loading settings from /home/renan/Documents/datasets/dbdataset/wandb/settings
+2025-01-27 16:51:05,049 INFO    Thread-319 (_run_job):7822 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-27 16:51:05,050 INFO    Thread-319 (_run_job):7822 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_165105-w12u2q4k/logs/debug.log
+2025-01-27 16:51:05,050 INFO    Thread-319 (_run_job):7822 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_165105-w12u2q4k/logs/debug-internal.log
+2025-01-27 16:51:05,051 INFO    Thread-319 (_run_job):7822 [wandb_init.py:init():743] calling init triggers
+2025-01-27 16:51:05,052 INFO    Thread-319 (_run_job):7822 [wandb_init.py:init():748] wandb.init called with sweep_config: {'batch_size': 32, 'epochs': 10}
+config: {}
+2025-01-27 16:51:05,053 INFO    Thread-319 (_run_job):7822 [wandb_init.py:init():768] wandb.init() called when a run is still active
+2025-01-27 16:51:05,054 ERROR   Thread-319 (_run_job):7822 [wandb_init.py:init():1454] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1444, in init
+    return wi.init(run_settings, run_config)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 771, in init
+    with telemetry.context() as tel:
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/telemetry.py", line 42, in __exit__
+    self._run._telemetry_callback(self._obj)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 758, in _telemetry_callback
+    self._telemetry_flush()
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 771, in _telemetry_flush
+    self._backend.interface._publish_telemetry(self._telemetry_obj)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 101, in _publish_telemetry
+    self._publish(rec)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 47, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 222, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 154, in send_server_request
+    self._send_message(msg)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 151, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2025-01-27 16:51:05,063 INFO    Thread-319 (_run_job):7822 [wandb_run.py:_finish():2134] finishing run renan-florencio-unicamp/DriverBehavior/q33cbq22
+2025-01-27 16:51:06,325 INFO    MainThread:7822 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 16:51:06,326 INFO    MainThread:7822 [wandb_init.py:_pause_backend():541] pausing backend
+2025-01-27 16:51:49,516 INFO    MainThread:7822 [wandb_init.py:_resume_backend():546] resuming backend
+2025-01-27 16:51:49,561 INFO    MainThread:7822 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 16:51:49,562 INFO    MainThread:7822 [wandb_init.py:_pause_backend():541] pausing backend
+2025-01-27 16:51:56,310 INFO    MainThread:7822 [wandb_init.py:_resume_backend():546] resuming backend
+2025-01-27 16:51:56,360 INFO    MainThread:7822 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 16:51:56,361 INFO    MainThread:7822 [wandb_init.py:_pause_backend():541] pausing backend
+2025-01-27 16:51:56,706 INFO    MainThread:7822 [wandb_init.py:_resume_backend():546] resuming backend
+2025-01-27 16:51:56,749 INFO    MainThread:7822 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 16:51:56,750 INFO    MainThread:7822 [wandb_init.py:_pause_backend():541] pausing backend
+2025-01-27 16:52:06,228 INFO    MainThread:7822 [wandb_init.py:_resume_backend():546] resuming backend
+2025-01-27 16:52:06,258 INFO    MainThread:7822 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 16:52:06,259 INFO    MainThread:7822 [wandb_init.py:_pause_backend():541] pausing backend
+2025-01-27 16:52:07,566 INFO    MainThread:7822 [wandb_init.py:_resume_backend():546] resuming backend
+2025-01-27 16:52:07,630 INFO    MainThread:7822 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 16:52:07,631 INFO    MainThread:7822 [wandb_init.py:_pause_backend():541] pausing backend

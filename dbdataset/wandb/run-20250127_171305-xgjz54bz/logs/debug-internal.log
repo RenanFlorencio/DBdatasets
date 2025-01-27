@@ -1,0 +1,16 @@
+{"time":"2025-01-27T17:13:05.238798805-03:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/home/renan/Documents/datasets/dbdataset/wandb/run-20250127_171305-xgjz54bz/logs/debug-core.log"}
+{"time":"2025-01-27T17:13:05.3455615-03:00","level":"INFO","msg":"created new stream","id":"xgjz54bz"}
+{"time":"2025-01-27T17:13:05.345676451-03:00","level":"INFO","msg":"stream: started","id":"xgjz54bz"}
+{"time":"2025-01-27T17:13:05.345716626-03:00","level":"INFO","msg":"handler: started","stream_id":"xgjz54bz"}
+{"time":"2025-01-27T17:13:05.345720278-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"xgjz54bz"}
+{"time":"2025-01-27T17:13:05.345963306-03:00","level":"INFO","msg":"sender: started","stream_id":"xgjz54bz"}
+{"time":"2025-01-27T17:13:05.745382041-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-27T17:14:02.119850723-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-27T17:14:02.120386378-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-27T17:14:03.122057685-03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.459782403,"progress":"11.4KB/11.4KB"},{"desc":"uploading config.yaml","runtime_seconds":0.248212078,"progress":"653B/653B"}],"total_operations":2}}
+{"time":"2025-01-27T17:14:03.283152052-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-27T17:14:04.609447083-03:00","level":"INFO","msg":"stream: closing","id":"xgjz54bz"}
+{"time":"2025-01-27T17:14:04.609474801-03:00","level":"INFO","msg":"handler: closed","stream_id":"xgjz54bz"}
+{"time":"2025-01-27T17:14:04.609490817-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xgjz54bz"}
+{"time":"2025-01-27T17:14:04.609528875-03:00","level":"INFO","msg":"sender: closed","stream_id":"xgjz54bz"}
+{"time":"2025-01-27T17:14:04.609664484-03:00","level":"INFO","msg":"stream: closed","id":"xgjz54bz"}

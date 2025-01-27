@@ -1,0 +1,16 @@
+{"time":"2025-01-27T17:05:09.36639164-03:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170509-bc9yrb8a/logs/debug-core.log"}
+{"time":"2025-01-27T17:05:09.473817999-03:00","level":"INFO","msg":"created new stream","id":"bc9yrb8a"}
+{"time":"2025-01-27T17:05:09.473879928-03:00","level":"INFO","msg":"stream: started","id":"bc9yrb8a"}
+{"time":"2025-01-27T17:05:09.473995524-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"bc9yrb8a"}
+{"time":"2025-01-27T17:05:09.474014837-03:00","level":"INFO","msg":"sender: started","stream_id":"bc9yrb8a"}
+{"time":"2025-01-27T17:05:09.47408542-03:00","level":"INFO","msg":"handler: started","stream_id":"bc9yrb8a"}
+{"time":"2025-01-27T17:05:09.774463357-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-27T17:05:09.994237324-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-27T17:05:09.995457364-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-27T17:05:10.95922916-03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading requirements.txt","runtime_seconds":0.685220878,"progress":"4.3KB/4.3KB"},{"desc":"uploading output.log","runtime_seconds":0.266191595},{"desc":"uploading wandb-summary.json","runtime_seconds":0.266165815,"progress":"24B/24B"}],"total_operations":3}}
+{"time":"2025-01-27T17:05:11.530205141-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-27T17:05:12.834884517-03:00","level":"INFO","msg":"stream: closing","id":"bc9yrb8a"}
+{"time":"2025-01-27T17:05:12.834912249-03:00","level":"INFO","msg":"handler: closed","stream_id":"bc9yrb8a"}
+{"time":"2025-01-27T17:05:12.834925905-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"bc9yrb8a"}
+{"time":"2025-01-27T17:05:12.834940083-03:00","level":"INFO","msg":"sender: closed","stream_id":"bc9yrb8a"}
+{"time":"2025-01-27T17:05:12.834998715-03:00","level":"INFO","msg":"stream: closed","id":"bc9yrb8a"}

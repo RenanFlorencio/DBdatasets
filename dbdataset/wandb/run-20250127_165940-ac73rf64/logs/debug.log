@@ -1,0 +1,620 @@
+2025-01-27 16:59:40,749 INFO    Thread-37 (_run_job):16862 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-27 16:59:40,749 INFO    Thread-37 (_run_job):16862 [wandb_setup.py:_flush():68] Configure stats pid to 16862
+2025-01-27 16:59:40,749 INFO    Thread-37 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/.config/wandb/settings
+2025-01-27 16:59:40,749 INFO    Thread-37 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/Documents/datasets/dbdataset/wandb/settings
+2025-01-27 16:59:40,750 INFO    Thread-37 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-27 16:59:40,750 INFO    Thread-37 (_run_job):16862 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_165940-ac73rf64/logs/debug.log
+2025-01-27 16:59:40,750 INFO    Thread-37 (_run_job):16862 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_165940-ac73rf64/logs/debug-internal.log
+2025-01-27 16:59:40,750 INFO    Thread-37 (_run_job):16862 [wandb_init.py:monkeypatch_ipython():576] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7a1b6ccdf730>
+2025-01-27 16:59:40,750 INFO    Thread-37 (_run_job):16862 [wandb_init.py:init():743] calling init triggers
+2025-01-27 16:59:40,750 INFO    Thread-37 (_run_job):16862 [wandb_init.py:init():748] wandb.init called with sweep_config: {'batch_size': 32, 'epochs': 25}
+config: {}
+2025-01-27 16:59:40,750 INFO    Thread-37 (_run_job):16862 [wandb_init.py:init():776] starting backend
+2025-01-27 16:59:40,954 INFO    Thread-37 (_run_job):16862 [wandb_init.py:init():780] sending inform_init request
+2025-01-27 16:59:40,955 INFO    Thread-37 (_run_job):16862 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-27 16:59:40,955 INFO    Thread-37 (_run_job):16862 [wandb_init.py:init():795] backend started and connected
+2025-01-27 16:59:40,959 INFO    Thread-37 (_run_job):16862 [wandb_run.py:_config_callback():1270] config_cb None None {'batch_size': 32, 'epochs': 25}
+2025-01-27 16:59:40,960 INFO    Thread-37 (_run_job):16862 [wandb_run.py:_label_probe_notebook():1213] probe notebook
+2025-01-27 16:59:40,963 INFO    Thread-37 (_run_job):16862 [wandb_init.py:init():888] updated telemetry
+2025-01-27 16:59:40,969 INFO    Thread-37 (_run_job):16862 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-01-27 16:59:41,571 INFO    Thread-37 (_run_job):16862 [wandb_init.py:init():967] starting run threads in backend
+2025-01-27 16:59:41,706 INFO    Thread-37 (_run_job):16862 [wandb_run.py:_console_start():2409] atexit reg
+2025-01-27 16:59:41,706 INFO    Thread-37 (_run_job):16862 [wandb_run.py:_redirect():2259] redirect: wrap_raw
+2025-01-27 16:59:41,706 INFO    Thread-37 (_run_job):16862 [wandb_run.py:_redirect():2324] Wrapping output streams.
+2025-01-27 16:59:41,706 INFO    Thread-37 (_run_job):16862 [wandb_run.py:_redirect():2349] Redirects installed.
+2025-01-27 16:59:41,707 INFO    Thread-37 (_run_job):16862 [wandb_init.py:init():1009] run started, returning control to user process
+2025-01-27 16:59:41,719 INFO    Thread-37 (_run_job):16862 [wandb_run.py:_finish():2134] finishing run renan-florencio-unicamp/DriverBehavior/ac73rf64
+2025-01-27 16:59:41,719 INFO    Thread-37 (_run_job):16862 [jupyter.py:save_history():458] not saving jupyter history
+2025-01-27 16:59:41,719 INFO    Thread-37 (_run_job):16862 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 16:59:41,719 INFO    Thread-37 (_run_job):16862 [wandb_init.py:_jupyter_teardown():558] cleaning up jupyter logic
+2025-01-27 16:59:41,719 INFO    Thread-37 (_run_job):16862 [wandb_run.py:_atexit_cleanup():2374] got exitcode: 1
+2025-01-27 16:59:41,719 INFO    Thread-37 (_run_job):16862 [wandb_run.py:_restore():2356] restore
+2025-01-27 16:59:41,719 INFO    Thread-37 (_run_job):16862 [wandb_run.py:_restore():2362] restore done
+2025-01-27 16:59:43,413 INFO    Thread-37 (_run_job):16862 [wandb_run.py:_restore():2356] restore
+2025-01-27 16:59:43,414 INFO    Thread-37 (_run_job):16862 [wandb_run.py:_restore():2362] restore done
+2025-01-27 16:59:43,414 ERROR   Thread-37 (_run_job):16862 [wandb_run.py:_atexit_cleanup():2395] Problem finishing run
+Traceback (most recent call last):
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/tmp/ipykernel_16862/147651179.py", line 6, in train_mlp_wandb
+    model = create_model()
+  File "/tmp/ipykernel_16862/3438460153.py", line 15, in create_model
+    Dense(len(classes), activation='softmax')
+NameError: name 'classes' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2386, in _atexit_cleanup
+    self._on_finish()
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2633, in _on_finish
+    with progress.progress_printer(
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/progress.py", line 40, in progress_printer
+    with printer.dynamic_text() as text_area:
+  File "/usr/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/sdk/lib/printer.py", line 446, in dynamic_text
+    handle.update(self._ipython_display.HTML(""))
+  File "/home/renan/.local/lib/python3.10/site-packages/IPython/core/display_functions.py", line 374, in update
+    update_display(obj, display_id=self.display_id, **kwargs)
+  File "/home/renan/.local/lib/python3.10/site-packages/IPython/core/display_functions.py", line 326, in update_display
+    display(obj, display_id=display_id, **kwargs)
+  File "/home/renan/.local/lib/python3.10/site-packages/IPython/core/display_functions.py", line 305, in display
+    publish_display_data(data=format_dict, metadata=md_dict, **kwargs)
+  File "/home/renan/.local/lib/python3.10/site-packages/IPython/core/display_functions.py", line 93, in publish_display_data
+    display_pub.publish(
+  File "/home/renan/.local/lib/python3.10/site-packages/ipykernel/zmqshell.py", line 103, in publish
+    self._flush_streams()
+  File "/home/renan/.local/lib/python3.10/site-packages/ipykernel/zmqshell.py", line 66, in _flush_streams
+    sys.stdout.flush()
+  File "/home/renan/.local/lib/python3.10/site-packages/ipykernel/iostream.py", line 604, in flush
+    self.pub_thread.schedule(self._flush)
+  File "/home/renan/.local/lib/python3.10/site-packages/ipykernel/iostream.py", line 267, in schedule
+    self._event_pipe.send(b"")
+  File "/home/renan/.local/lib/python3.10/site-packages/zmq/sugar/socket.py", line 701, in send
+    return super().send(data, flags=flags, copy=copy, track=track)
+  File "_zmq.py", line 1092, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1134, in zmq.backend.cython._zmq.Socket.send
+  File "_zmq.py", line 1209, in zmq.backend.cython._zmq._check_closed
+zmq.error.ZMQError: Socket operation on non-socket
+2025-01-27 17:01:11,185 INFO    MainThread:16862 [pyagent.py:run():322] Starting sweep agent: entity=None, project=None, count=10
+2025-01-27 17:01:11,860 WARNING MsgRouterThr:16862 [router.py:message_loop():75] message_loop has been closed
+2025-01-27 17:01:12,383 INFO    Thread-47 (_run_job):16862 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-27 17:01:12,383 INFO    Thread-47 (_run_job):16862 [wandb_setup.py:_flush():68] Configure stats pid to 16862
+2025-01-27 17:01:12,383 INFO    Thread-47 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/.config/wandb/settings
+2025-01-27 17:01:12,383 INFO    Thread-47 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/Documents/datasets/dbdataset/wandb/settings
+2025-01-27 17:01:12,383 INFO    Thread-47 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-27 17:01:12,383 INFO    Thread-47 (_run_job):16862 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170112-lbrj99g8/logs/debug.log
+2025-01-27 17:01:12,383 INFO    Thread-47 (_run_job):16862 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170112-lbrj99g8/logs/debug-internal.log
+2025-01-27 17:01:12,383 INFO    Thread-47 (_run_job):16862 [wandb_init.py:monkeypatch_ipython():576] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7a1b6ccdeb90>
+2025-01-27 17:01:12,383 INFO    Thread-47 (_run_job):16862 [wandb_init.py:init():743] calling init triggers
+2025-01-27 17:01:12,383 INFO    Thread-47 (_run_job):16862 [wandb_init.py:init():748] wandb.init called with sweep_config: {'batch_size': 32, 'epochs': 10}
+config: {}
+2025-01-27 17:01:12,383 INFO    Thread-47 (_run_job):16862 [wandb_init.py:init():776] starting backend
+2025-01-27 17:01:12,587 INFO    Thread-47 (_run_job):16862 [wandb_init.py:init():780] sending inform_init request
+2025-01-27 17:01:12,588 INFO    Thread-47 (_run_job):16862 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-27 17:01:12,588 INFO    Thread-47 (_run_job):16862 [wandb_init.py:init():795] backend started and connected
+2025-01-27 17:01:12,592 INFO    Thread-47 (_run_job):16862 [wandb_run.py:_config_callback():1270] config_cb None None {'batch_size': 32, 'epochs': 10}
+2025-01-27 17:01:12,592 INFO    Thread-47 (_run_job):16862 [wandb_run.py:_label_probe_notebook():1213] probe notebook
+2025-01-27 17:01:12,594 INFO    Thread-47 (_run_job):16862 [wandb_init.py:init():888] updated telemetry
+2025-01-27 17:01:12,605 INFO    Thread-47 (_run_job):16862 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-01-27 17:01:13,041 INFO    Thread-47 (_run_job):16862 [wandb_init.py:init():967] starting run threads in backend
+2025-01-27 17:01:13,206 INFO    Thread-47 (_run_job):16862 [wandb_run.py:_console_start():2409] atexit reg
+2025-01-27 17:01:13,206 INFO    Thread-47 (_run_job):16862 [wandb_run.py:_redirect():2259] redirect: wrap_raw
+2025-01-27 17:01:13,206 INFO    Thread-47 (_run_job):16862 [wandb_run.py:_redirect():2324] Wrapping output streams.
+2025-01-27 17:01:13,206 INFO    Thread-47 (_run_job):16862 [wandb_run.py:_redirect():2349] Redirects installed.
+2025-01-27 17:01:13,207 INFO    Thread-47 (_run_job):16862 [wandb_init.py:init():1009] run started, returning control to user process
+2025-01-27 17:01:13,374 INFO    Thread-47 (_run_job):16862 [wandb_run.py:_finish():2134] finishing run renan-florencio-unicamp/DriverBehavior/lbrj99g8
+2025-01-27 17:01:13,374 INFO    Thread-47 (_run_job):16862 [jupyter.py:save_history():458] not saving jupyter history
+2025-01-27 17:01:13,374 INFO    Thread-47 (_run_job):16862 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 17:01:13,374 INFO    Thread-47 (_run_job):16862 [wandb_init.py:_jupyter_teardown():558] cleaning up jupyter logic
+2025-01-27 17:01:13,374 INFO    Thread-47 (_run_job):16862 [wandb_run.py:_atexit_cleanup():2374] got exitcode: 1
+2025-01-27 17:01:13,374 INFO    Thread-47 (_run_job):16862 [wandb_run.py:_restore():2356] restore
+2025-01-27 17:01:13,374 INFO    Thread-47 (_run_job):16862 [wandb_run.py:_restore():2362] restore done
+2025-01-27 17:01:16,015 INFO    Thread-47 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():3976] rendering history
+2025-01-27 17:01:16,016 INFO    Thread-47 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():4008] rendering summary
+2025-01-27 17:01:16,016 INFO    Thread-47 (_run_job):16862 [wandb_run.py:_footer_sync_info():3937] logging synced files
+2025-01-27 17:01:16,030 ERROR   MainThread:16862 [pyagent.py:_run_jobs_from_queue():234] Run lbrj99g8 errored:
+Traceback (most recent call last):
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/tmp/ipykernel_16862/147651179.py", line 7, in train_mlp_wandb
+    history = model.fit(X_train_scaled, y_train_one_hot, epochs=epochs, batch_size=batch_size, validation_data=(X_test_scaled, y_test_one_hot))
+NameError: name 'y_train_one_hot' is not defined
+
+2025-01-27 17:01:19,276 INFO    Thread-50 (_run_job):16862 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-27 17:01:19,276 INFO    Thread-50 (_run_job):16862 [wandb_setup.py:_flush():68] Configure stats pid to 16862
+2025-01-27 17:01:19,276 INFO    Thread-50 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/.config/wandb/settings
+2025-01-27 17:01:19,276 INFO    Thread-50 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/Documents/datasets/dbdataset/wandb/settings
+2025-01-27 17:01:19,276 INFO    Thread-50 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-27 17:01:19,276 INFO    Thread-50 (_run_job):16862 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170119-zizobgss/logs/debug.log
+2025-01-27 17:01:19,277 INFO    Thread-50 (_run_job):16862 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170119-zizobgss/logs/debug-internal.log
+2025-01-27 17:01:19,277 INFO    Thread-50 (_run_job):16862 [wandb_init.py:monkeypatch_ipython():576] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7a1b6cc506a0>
+2025-01-27 17:01:19,277 INFO    Thread-50 (_run_job):16862 [wandb_init.py:init():743] calling init triggers
+2025-01-27 17:01:19,277 INFO    Thread-50 (_run_job):16862 [wandb_init.py:init():748] wandb.init called with sweep_config: {'batch_size': 32, 'epochs': 25}
+config: {}
+2025-01-27 17:01:19,277 INFO    Thread-50 (_run_job):16862 [wandb_init.py:init():776] starting backend
+2025-01-27 17:01:19,482 INFO    Thread-50 (_run_job):16862 [wandb_init.py:init():780] sending inform_init request
+2025-01-27 17:01:19,483 INFO    Thread-50 (_run_job):16862 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-27 17:01:19,484 INFO    Thread-50 (_run_job):16862 [wandb_init.py:init():795] backend started and connected
+2025-01-27 17:01:19,491 INFO    Thread-50 (_run_job):16862 [wandb_run.py:_config_callback():1270] config_cb None None {'batch_size': 32, 'epochs': 25}
+2025-01-27 17:01:19,493 INFO    Thread-50 (_run_job):16862 [wandb_run.py:_label_probe_notebook():1213] probe notebook
+2025-01-27 17:01:19,496 INFO    Thread-50 (_run_job):16862 [wandb_init.py:init():888] updated telemetry
+2025-01-27 17:01:19,504 INFO    Thread-50 (_run_job):16862 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-01-27 17:01:21,107 INFO    Thread-50 (_run_job):16862 [wandb_init.py:init():967] starting run threads in backend
+2025-01-27 17:01:21,255 INFO    Thread-50 (_run_job):16862 [wandb_run.py:_console_start():2409] atexit reg
+2025-01-27 17:01:21,255 INFO    Thread-50 (_run_job):16862 [wandb_run.py:_redirect():2259] redirect: wrap_raw
+2025-01-27 17:01:21,255 INFO    Thread-50 (_run_job):16862 [wandb_run.py:_redirect():2324] Wrapping output streams.
+2025-01-27 17:01:21,255 INFO    Thread-50 (_run_job):16862 [wandb_run.py:_redirect():2349] Redirects installed.
+2025-01-27 17:01:21,255 INFO    Thread-50 (_run_job):16862 [wandb_init.py:init():1009] run started, returning control to user process
+2025-01-27 17:01:21,291 INFO    Thread-50 (_run_job):16862 [wandb_run.py:_finish():2134] finishing run renan-florencio-unicamp/DriverBehavior/zizobgss
+2025-01-27 17:01:21,291 INFO    Thread-50 (_run_job):16862 [jupyter.py:save_history():458] not saving jupyter history
+2025-01-27 17:01:21,291 INFO    Thread-50 (_run_job):16862 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 17:01:21,291 INFO    Thread-50 (_run_job):16862 [wandb_init.py:_jupyter_teardown():558] cleaning up jupyter logic
+2025-01-27 17:01:21,292 INFO    Thread-50 (_run_job):16862 [wandb_run.py:_atexit_cleanup():2374] got exitcode: 1
+2025-01-27 17:01:21,292 INFO    Thread-50 (_run_job):16862 [wandb_run.py:_restore():2356] restore
+2025-01-27 17:01:21,292 INFO    Thread-50 (_run_job):16862 [wandb_run.py:_restore():2362] restore done
+2025-01-27 17:01:25,395 INFO    Thread-50 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():3976] rendering history
+2025-01-27 17:01:25,396 INFO    Thread-50 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():4008] rendering summary
+2025-01-27 17:01:25,396 INFO    Thread-50 (_run_job):16862 [wandb_run.py:_footer_sync_info():3937] logging synced files
+2025-01-27 17:01:25,414 ERROR   MainThread:16862 [pyagent.py:_run_jobs_from_queue():234] Run zizobgss errored:
+Traceback (most recent call last):
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/tmp/ipykernel_16862/147651179.py", line 7, in train_mlp_wandb
+    history = model.fit(X_train_scaled, y_train_one_hot, epochs=epochs, batch_size=batch_size, validation_data=(X_test_scaled, y_test_one_hot))
+NameError: name 'y_train_one_hot' is not defined
+
+2025-01-27 17:01:29,919 INFO    Thread-53 (_run_job):16862 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-27 17:01:29,919 INFO    Thread-53 (_run_job):16862 [wandb_setup.py:_flush():68] Configure stats pid to 16862
+2025-01-27 17:01:29,919 INFO    Thread-53 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/.config/wandb/settings
+2025-01-27 17:01:29,919 INFO    Thread-53 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/Documents/datasets/dbdataset/wandb/settings
+2025-01-27 17:01:29,919 INFO    Thread-53 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-27 17:01:29,920 INFO    Thread-53 (_run_job):16862 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170129-yx3n7r8u/logs/debug.log
+2025-01-27 17:01:29,920 INFO    Thread-53 (_run_job):16862 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170129-yx3n7r8u/logs/debug-internal.log
+2025-01-27 17:01:29,920 INFO    Thread-53 (_run_job):16862 [wandb_init.py:monkeypatch_ipython():576] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7a1b6c1a05b0>
+2025-01-27 17:01:29,920 INFO    Thread-53 (_run_job):16862 [wandb_init.py:init():743] calling init triggers
+2025-01-27 17:01:29,920 INFO    Thread-53 (_run_job):16862 [wandb_init.py:init():748] wandb.init called with sweep_config: {'batch_size': 32, 'epochs': 50}
+config: {}
+2025-01-27 17:01:29,920 INFO    Thread-53 (_run_job):16862 [wandb_init.py:init():776] starting backend
+2025-01-27 17:01:30,125 INFO    Thread-53 (_run_job):16862 [wandb_init.py:init():780] sending inform_init request
+2025-01-27 17:01:30,127 INFO    Thread-53 (_run_job):16862 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-27 17:01:30,128 INFO    Thread-53 (_run_job):16862 [wandb_init.py:init():795] backend started and connected
+2025-01-27 17:01:30,135 INFO    Thread-53 (_run_job):16862 [wandb_run.py:_config_callback():1270] config_cb None None {'batch_size': 32, 'epochs': 50}
+2025-01-27 17:01:30,136 INFO    Thread-53 (_run_job):16862 [wandb_run.py:_label_probe_notebook():1213] probe notebook
+2025-01-27 17:01:30,137 INFO    Thread-53 (_run_job):16862 [wandb_init.py:init():888] updated telemetry
+2025-01-27 17:01:30,148 INFO    Thread-53 (_run_job):16862 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-01-27 17:01:30,731 INFO    Thread-53 (_run_job):16862 [wandb_init.py:init():967] starting run threads in backend
+2025-01-27 17:01:30,852 INFO    Thread-53 (_run_job):16862 [wandb_run.py:_console_start():2409] atexit reg
+2025-01-27 17:01:30,852 INFO    Thread-53 (_run_job):16862 [wandb_run.py:_redirect():2259] redirect: wrap_raw
+2025-01-27 17:01:30,852 INFO    Thread-53 (_run_job):16862 [wandb_run.py:_redirect():2324] Wrapping output streams.
+2025-01-27 17:01:30,852 INFO    Thread-53 (_run_job):16862 [wandb_run.py:_redirect():2349] Redirects installed.
+2025-01-27 17:01:30,852 INFO    Thread-53 (_run_job):16862 [wandb_init.py:init():1009] run started, returning control to user process
+2025-01-27 17:01:30,880 INFO    Thread-53 (_run_job):16862 [wandb_run.py:_finish():2134] finishing run renan-florencio-unicamp/DriverBehavior/yx3n7r8u
+2025-01-27 17:01:30,881 INFO    Thread-53 (_run_job):16862 [jupyter.py:save_history():458] not saving jupyter history
+2025-01-27 17:01:30,881 INFO    Thread-53 (_run_job):16862 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 17:01:30,881 INFO    Thread-53 (_run_job):16862 [wandb_init.py:_jupyter_teardown():558] cleaning up jupyter logic
+2025-01-27 17:01:30,881 INFO    Thread-53 (_run_job):16862 [wandb_run.py:_atexit_cleanup():2374] got exitcode: 1
+2025-01-27 17:01:30,881 INFO    Thread-53 (_run_job):16862 [wandb_run.py:_restore():2356] restore
+2025-01-27 17:01:30,881 INFO    Thread-53 (_run_job):16862 [wandb_run.py:_restore():2362] restore done
+2025-01-27 17:01:33,577 INFO    Thread-53 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():3976] rendering history
+2025-01-27 17:01:33,578 INFO    Thread-53 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():4008] rendering summary
+2025-01-27 17:01:33,578 INFO    Thread-53 (_run_job):16862 [wandb_run.py:_footer_sync_info():3937] logging synced files
+2025-01-27 17:01:33,596 ERROR   MainThread:16862 [pyagent.py:_run_jobs_from_queue():234] Run yx3n7r8u errored:
+Traceback (most recent call last):
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/tmp/ipykernel_16862/147651179.py", line 7, in train_mlp_wandb
+    history = model.fit(X_train_scaled, y_train_one_hot, epochs=epochs, batch_size=batch_size, validation_data=(X_test_scaled, y_test_one_hot))
+NameError: name 'y_train_one_hot' is not defined
+
+2025-01-27 17:01:33,598 ERROR   MainThread:16862 [pyagent.py:_run_jobs_from_queue():245] Detected 3 failed runs in the first 60 seconds, killing sweep.
+2025-01-27 17:05:07,828 INFO    MainThread:16862 [pyagent.py:run():322] Starting sweep agent: entity=None, project=None, count=10
+2025-01-27 17:05:09,157 INFO    Thread-61 (_run_job):16862 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-27 17:05:09,158 INFO    Thread-61 (_run_job):16862 [wandb_setup.py:_flush():68] Configure stats pid to 16862
+2025-01-27 17:05:09,158 INFO    Thread-61 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/.config/wandb/settings
+2025-01-27 17:05:09,158 INFO    Thread-61 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/Documents/datasets/dbdataset/wandb/settings
+2025-01-27 17:05:09,158 INFO    Thread-61 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-27 17:05:09,158 INFO    Thread-61 (_run_job):16862 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170509-bc9yrb8a/logs/debug.log
+2025-01-27 17:05:09,158 INFO    Thread-61 (_run_job):16862 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170509-bc9yrb8a/logs/debug-internal.log
+2025-01-27 17:05:09,158 INFO    Thread-61 (_run_job):16862 [wandb_init.py:monkeypatch_ipython():576] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7a1b6cffe6b0>
+2025-01-27 17:05:09,158 INFO    Thread-61 (_run_job):16862 [wandb_init.py:init():743] calling init triggers
+2025-01-27 17:05:09,158 INFO    Thread-61 (_run_job):16862 [wandb_init.py:init():748] wandb.init called with sweep_config: {'batch_size': 32, 'epochs': 10}
+config: {}
+2025-01-27 17:05:09,158 INFO    Thread-61 (_run_job):16862 [wandb_init.py:init():776] starting backend
+2025-01-27 17:05:09,360 INFO    Thread-61 (_run_job):16862 [wandb_init.py:init():780] sending inform_init request
+2025-01-27 17:05:09,361 INFO    Thread-61 (_run_job):16862 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-27 17:05:09,362 INFO    Thread-61 (_run_job):16862 [wandb_init.py:init():795] backend started and connected
+2025-01-27 17:05:09,370 INFO    Thread-61 (_run_job):16862 [wandb_run.py:_config_callback():1270] config_cb None None {'batch_size': 32, 'epochs': 10}
+2025-01-27 17:05:09,373 INFO    Thread-61 (_run_job):16862 [wandb_run.py:_label_probe_notebook():1213] probe notebook
+2025-01-27 17:05:09,376 INFO    Thread-61 (_run_job):16862 [wandb_init.py:init():888] updated telemetry
+2025-01-27 17:05:09,391 INFO    Thread-61 (_run_job):16862 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-01-27 17:05:09,771 INFO    Thread-61 (_run_job):16862 [wandb_init.py:init():967] starting run threads in backend
+2025-01-27 17:05:09,954 INFO    Thread-61 (_run_job):16862 [wandb_run.py:_console_start():2409] atexit reg
+2025-01-27 17:05:09,954 INFO    Thread-61 (_run_job):16862 [wandb_run.py:_redirect():2259] redirect: wrap_raw
+2025-01-27 17:05:09,954 INFO    Thread-61 (_run_job):16862 [wandb_run.py:_redirect():2324] Wrapping output streams.
+2025-01-27 17:05:09,955 INFO    Thread-61 (_run_job):16862 [wandb_run.py:_redirect():2349] Redirects installed.
+2025-01-27 17:05:09,955 INFO    Thread-61 (_run_job):16862 [wandb_init.py:init():1009] run started, returning control to user process
+2025-01-27 17:05:09,955 INFO    Thread-61 (_run_job):16862 [wandb_run.py:_finish():2134] finishing run renan-florencio-unicamp/DriverBehavior/bc9yrb8a
+2025-01-27 17:05:09,956 INFO    Thread-61 (_run_job):16862 [jupyter.py:save_history():458] not saving jupyter history
+2025-01-27 17:05:09,956 INFO    Thread-61 (_run_job):16862 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 17:05:09,956 INFO    Thread-61 (_run_job):16862 [wandb_init.py:_jupyter_teardown():558] cleaning up jupyter logic
+2025-01-27 17:05:09,956 INFO    Thread-61 (_run_job):16862 [wandb_run.py:_atexit_cleanup():2374] got exitcode: 1
+2025-01-27 17:05:09,956 INFO    Thread-61 (_run_job):16862 [wandb_run.py:_restore():2356] restore
+2025-01-27 17:05:09,956 INFO    Thread-61 (_run_job):16862 [wandb_run.py:_restore():2362] restore done
+2025-01-27 17:05:12,830 INFO    Thread-61 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():3976] rendering history
+2025-01-27 17:05:12,831 INFO    Thread-61 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():4008] rendering summary
+2025-01-27 17:05:12,831 INFO    Thread-61 (_run_job):16862 [wandb_run.py:_footer_sync_info():3937] logging synced files
+2025-01-27 17:05:12,837 ERROR   MainThread:16862 [pyagent.py:_run_jobs_from_queue():234] Run bc9yrb8a errored:
+Traceback (most recent call last):
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/tmp/ipykernel_16862/147651179.py", line 6, in train_mlp_wandb
+    model = create_model()
+  File "/tmp/ipykernel_16862/2074760018.py", line 3, in create_model
+    Input(shape=(X_train_scaled.shape[1],)),
+NameError: name 'Input' is not defined. Did you mean: 'input'?
+
+2025-01-27 17:05:14,299 INFO    Thread-64 (_run_job):16862 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-27 17:05:14,299 INFO    Thread-64 (_run_job):16862 [wandb_setup.py:_flush():68] Configure stats pid to 16862
+2025-01-27 17:05:14,299 INFO    Thread-64 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/.config/wandb/settings
+2025-01-27 17:05:14,299 INFO    Thread-64 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/Documents/datasets/dbdataset/wandb/settings
+2025-01-27 17:05:14,299 INFO    Thread-64 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-27 17:05:14,300 INFO    Thread-64 (_run_job):16862 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170514-hg426vyt/logs/debug.log
+2025-01-27 17:05:14,300 INFO    Thread-64 (_run_job):16862 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170514-hg426vyt/logs/debug-internal.log
+2025-01-27 17:05:14,300 INFO    Thread-64 (_run_job):16862 [wandb_init.py:monkeypatch_ipython():576] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7a1b6c0201c0>
+2025-01-27 17:05:14,300 INFO    Thread-64 (_run_job):16862 [wandb_init.py:init():743] calling init triggers
+2025-01-27 17:05:14,300 INFO    Thread-64 (_run_job):16862 [wandb_init.py:init():748] wandb.init called with sweep_config: {'batch_size': 32, 'epochs': 25}
+config: {}
+2025-01-27 17:05:14,300 INFO    Thread-64 (_run_job):16862 [wandb_init.py:init():776] starting backend
+2025-01-27 17:05:14,503 INFO    Thread-64 (_run_job):16862 [wandb_init.py:init():780] sending inform_init request
+2025-01-27 17:05:14,504 INFO    Thread-64 (_run_job):16862 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-27 17:05:14,505 INFO    Thread-64 (_run_job):16862 [wandb_init.py:init():795] backend started and connected
+2025-01-27 17:05:14,511 INFO    Thread-64 (_run_job):16862 [wandb_run.py:_config_callback():1270] config_cb None None {'batch_size': 32, 'epochs': 25}
+2025-01-27 17:05:14,511 INFO    Thread-64 (_run_job):16862 [wandb_run.py:_label_probe_notebook():1213] probe notebook
+2025-01-27 17:05:14,513 INFO    Thread-64 (_run_job):16862 [wandb_init.py:init():888] updated telemetry
+2025-01-27 17:05:14,522 INFO    Thread-64 (_run_job):16862 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-01-27 17:05:14,846 INFO    Thread-64 (_run_job):16862 [wandb_init.py:init():967] starting run threads in backend
+2025-01-27 17:05:14,984 INFO    Thread-64 (_run_job):16862 [wandb_run.py:_console_start():2409] atexit reg
+2025-01-27 17:05:14,984 INFO    Thread-64 (_run_job):16862 [wandb_run.py:_redirect():2259] redirect: wrap_raw
+2025-01-27 17:05:14,984 INFO    Thread-64 (_run_job):16862 [wandb_run.py:_redirect():2324] Wrapping output streams.
+2025-01-27 17:05:14,984 INFO    Thread-64 (_run_job):16862 [wandb_run.py:_redirect():2349] Redirects installed.
+2025-01-27 17:05:14,985 INFO    Thread-64 (_run_job):16862 [wandb_init.py:init():1009] run started, returning control to user process
+2025-01-27 17:05:14,985 INFO    Thread-64 (_run_job):16862 [wandb_run.py:_finish():2134] finishing run renan-florencio-unicamp/DriverBehavior/hg426vyt
+2025-01-27 17:05:14,985 INFO    Thread-64 (_run_job):16862 [jupyter.py:save_history():458] not saving jupyter history
+2025-01-27 17:05:14,985 INFO    Thread-64 (_run_job):16862 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 17:05:14,985 INFO    Thread-64 (_run_job):16862 [wandb_init.py:_jupyter_teardown():558] cleaning up jupyter logic
+2025-01-27 17:05:14,985 INFO    Thread-64 (_run_job):16862 [wandb_run.py:_atexit_cleanup():2374] got exitcode: 1
+2025-01-27 17:05:14,985 INFO    Thread-64 (_run_job):16862 [wandb_run.py:_restore():2356] restore
+2025-01-27 17:05:14,985 INFO    Thread-64 (_run_job):16862 [wandb_run.py:_restore():2362] restore done
+2025-01-27 17:05:17,446 INFO    Thread-64 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():3976] rendering history
+2025-01-27 17:05:17,446 INFO    Thread-64 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():4008] rendering summary
+2025-01-27 17:05:17,446 INFO    Thread-64 (_run_job):16862 [wandb_run.py:_footer_sync_info():3937] logging synced files
+2025-01-27 17:05:17,453 ERROR   MainThread:16862 [pyagent.py:_run_jobs_from_queue():234] Run hg426vyt errored:
+Traceback (most recent call last):
+  File "/home/renan/.local/lib/python3.10/site-packages/wandb/agents/pyagent.py", line 306, in _run_job
+    self._function()
+  File "/tmp/ipykernel_16862/147651179.py", line 6, in train_mlp_wandb
+    model = create_model()
+  File "/tmp/ipykernel_16862/2074760018.py", line 3, in create_model
+    Input(shape=(X_train_scaled.shape[1],)),
+NameError: name 'Input' is not defined. Did you mean: 'input'?
+
+2025-01-27 17:05:48,819 INFO    MainThread:16862 [pyagent.py:run():322] Starting sweep agent: entity=None, project=None, count=10
+2025-01-27 17:05:49,915 INFO    Thread-71 (_run_job):16862 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-27 17:05:49,915 INFO    Thread-71 (_run_job):16862 [wandb_setup.py:_flush():68] Configure stats pid to 16862
+2025-01-27 17:05:49,915 INFO    Thread-71 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/.config/wandb/settings
+2025-01-27 17:05:49,915 INFO    Thread-71 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/Documents/datasets/dbdataset/wandb/settings
+2025-01-27 17:05:49,915 INFO    Thread-71 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-27 17:05:49,915 INFO    Thread-71 (_run_job):16862 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170549-wa0u51qj/logs/debug.log
+2025-01-27 17:05:49,916 INFO    Thread-71 (_run_job):16862 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170549-wa0u51qj/logs/debug-internal.log
+2025-01-27 17:05:49,916 INFO    Thread-71 (_run_job):16862 [wandb_init.py:monkeypatch_ipython():576] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7a1b6c008100>
+2025-01-27 17:05:49,916 INFO    Thread-71 (_run_job):16862 [wandb_init.py:init():743] calling init triggers
+2025-01-27 17:05:49,916 INFO    Thread-71 (_run_job):16862 [wandb_init.py:init():748] wandb.init called with sweep_config: {'batch_size': 32, 'epochs': 10}
+config: {}
+2025-01-27 17:05:49,916 INFO    Thread-71 (_run_job):16862 [wandb_init.py:init():776] starting backend
+2025-01-27 17:05:50,119 INFO    Thread-71 (_run_job):16862 [wandb_init.py:init():780] sending inform_init request
+2025-01-27 17:05:50,120 INFO    Thread-71 (_run_job):16862 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-27 17:05:50,120 INFO    Thread-71 (_run_job):16862 [wandb_init.py:init():795] backend started and connected
+2025-01-27 17:05:50,125 INFO    Thread-71 (_run_job):16862 [wandb_run.py:_config_callback():1270] config_cb None None {'batch_size': 32, 'epochs': 10}
+2025-01-27 17:05:50,127 INFO    Thread-71 (_run_job):16862 [wandb_run.py:_label_probe_notebook():1213] probe notebook
+2025-01-27 17:05:50,130 INFO    Thread-71 (_run_job):16862 [wandb_init.py:init():888] updated telemetry
+2025-01-27 17:05:50,139 INFO    Thread-71 (_run_job):16862 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-01-27 17:05:50,527 INFO    Thread-71 (_run_job):16862 [wandb_init.py:init():967] starting run threads in backend
+2025-01-27 17:05:50,701 INFO    Thread-71 (_run_job):16862 [wandb_run.py:_console_start():2409] atexit reg
+2025-01-27 17:05:50,701 INFO    Thread-71 (_run_job):16862 [wandb_run.py:_redirect():2259] redirect: wrap_raw
+2025-01-27 17:05:50,701 INFO    Thread-71 (_run_job):16862 [wandb_run.py:_redirect():2324] Wrapping output streams.
+2025-01-27 17:05:50,701 INFO    Thread-71 (_run_job):16862 [wandb_run.py:_redirect():2349] Redirects installed.
+2025-01-27 17:05:50,701 INFO    Thread-71 (_run_job):16862 [wandb_init.py:init():1009] run started, returning control to user process
+2025-01-27 17:06:13,851 INFO    Thread-71 (_run_job):16862 [wandb_run.py:_finish():2134] finishing run renan-florencio-unicamp/DriverBehavior/wa0u51qj
+2025-01-27 17:06:13,852 INFO    Thread-71 (_run_job):16862 [jupyter.py:save_history():458] not saving jupyter history
+2025-01-27 17:06:13,852 INFO    Thread-71 (_run_job):16862 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 17:06:13,852 INFO    Thread-71 (_run_job):16862 [wandb_init.py:_jupyter_teardown():558] cleaning up jupyter logic
+2025-01-27 17:06:13,852 INFO    Thread-71 (_run_job):16862 [wandb_run.py:_atexit_cleanup():2374] got exitcode: 0
+2025-01-27 17:06:13,852 INFO    Thread-71 (_run_job):16862 [wandb_run.py:_restore():2356] restore
+2025-01-27 17:06:13,853 INFO    Thread-71 (_run_job):16862 [wandb_run.py:_restore():2362] restore done
+2025-01-27 17:06:16,009 INFO    Thread-71 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():3976] rendering history
+2025-01-27 17:06:16,010 INFO    Thread-71 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():4008] rendering summary
+2025-01-27 17:06:16,012 INFO    Thread-71 (_run_job):16862 [wandb_run.py:_footer_sync_info():3937] logging synced files
+2025-01-27 17:06:21,552 INFO    Thread-74 (_run_job):16862 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-27 17:06:21,552 INFO    Thread-74 (_run_job):16862 [wandb_setup.py:_flush():68] Configure stats pid to 16862
+2025-01-27 17:06:21,552 INFO    Thread-74 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/.config/wandb/settings
+2025-01-27 17:06:21,552 INFO    Thread-74 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/Documents/datasets/dbdataset/wandb/settings
+2025-01-27 17:06:21,552 INFO    Thread-74 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-27 17:06:21,552 INFO    Thread-74 (_run_job):16862 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170621-syfu5ppp/logs/debug.log
+2025-01-27 17:06:21,552 INFO    Thread-74 (_run_job):16862 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170621-syfu5ppp/logs/debug-internal.log
+2025-01-27 17:06:21,553 INFO    Thread-74 (_run_job):16862 [wandb_init.py:monkeypatch_ipython():576] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7a1b6c1a04c0>
+2025-01-27 17:06:21,553 INFO    Thread-74 (_run_job):16862 [wandb_init.py:init():743] calling init triggers
+2025-01-27 17:06:21,553 INFO    Thread-74 (_run_job):16862 [wandb_init.py:init():748] wandb.init called with sweep_config: {'batch_size': 32, 'epochs': 25}
+config: {}
+2025-01-27 17:06:21,553 INFO    Thread-74 (_run_job):16862 [wandb_init.py:init():776] starting backend
+2025-01-27 17:06:21,757 INFO    Thread-74 (_run_job):16862 [wandb_init.py:init():780] sending inform_init request
+2025-01-27 17:06:21,759 INFO    Thread-74 (_run_job):16862 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-27 17:06:21,760 INFO    Thread-74 (_run_job):16862 [wandb_init.py:init():795] backend started and connected
+2025-01-27 17:06:21,768 INFO    Thread-74 (_run_job):16862 [wandb_run.py:_config_callback():1270] config_cb None None {'batch_size': 32, 'epochs': 25}
+2025-01-27 17:06:21,770 INFO    Thread-74 (_run_job):16862 [wandb_run.py:_label_probe_notebook():1213] probe notebook
+2025-01-27 17:06:21,771 INFO    Thread-74 (_run_job):16862 [wandb_init.py:init():888] updated telemetry
+2025-01-27 17:06:21,781 INFO    Thread-74 (_run_job):16862 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-01-27 17:06:22,272 INFO    Thread-74 (_run_job):16862 [wandb_init.py:init():967] starting run threads in backend
+2025-01-27 17:06:22,414 INFO    Thread-74 (_run_job):16862 [wandb_run.py:_console_start():2409] atexit reg
+2025-01-27 17:06:22,414 INFO    Thread-74 (_run_job):16862 [wandb_run.py:_redirect():2259] redirect: wrap_raw
+2025-01-27 17:06:22,414 INFO    Thread-74 (_run_job):16862 [wandb_run.py:_redirect():2324] Wrapping output streams.
+2025-01-27 17:06:22,414 INFO    Thread-74 (_run_job):16862 [wandb_run.py:_redirect():2349] Redirects installed.
+2025-01-27 17:06:22,414 INFO    Thread-74 (_run_job):16862 [wandb_init.py:init():1009] run started, returning control to user process
+2025-01-27 17:07:17,707 INFO    Thread-74 (_run_job):16862 [wandb_run.py:_finish():2134] finishing run renan-florencio-unicamp/DriverBehavior/syfu5ppp
+2025-01-27 17:07:17,707 INFO    Thread-74 (_run_job):16862 [jupyter.py:save_history():458] not saving jupyter history
+2025-01-27 17:07:17,708 INFO    Thread-74 (_run_job):16862 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 17:07:17,708 INFO    Thread-74 (_run_job):16862 [wandb_init.py:_jupyter_teardown():558] cleaning up jupyter logic
+2025-01-27 17:07:17,708 INFO    Thread-74 (_run_job):16862 [wandb_run.py:_atexit_cleanup():2374] got exitcode: 0
+2025-01-27 17:07:17,708 INFO    Thread-74 (_run_job):16862 [wandb_run.py:_restore():2356] restore
+2025-01-27 17:07:17,708 INFO    Thread-74 (_run_job):16862 [wandb_run.py:_restore():2362] restore done
+2025-01-27 17:07:20,113 INFO    Thread-74 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():3976] rendering history
+2025-01-27 17:07:20,114 INFO    Thread-74 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():4008] rendering summary
+2025-01-27 17:07:20,118 INFO    Thread-74 (_run_job):16862 [wandb_run.py:_footer_sync_info():3937] logging synced files
+2025-01-27 17:07:24,333 INFO    Thread-77 (_run_job):16862 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-27 17:07:24,334 INFO    Thread-77 (_run_job):16862 [wandb_setup.py:_flush():68] Configure stats pid to 16862
+2025-01-27 17:07:24,334 INFO    Thread-77 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/.config/wandb/settings
+2025-01-27 17:07:24,334 INFO    Thread-77 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/Documents/datasets/dbdataset/wandb/settings
+2025-01-27 17:07:24,334 INFO    Thread-77 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-27 17:07:24,334 INFO    Thread-77 (_run_job):16862 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170724-0kvkdc3y/logs/debug.log
+2025-01-27 17:07:24,334 INFO    Thread-77 (_run_job):16862 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170724-0kvkdc3y/logs/debug-internal.log
+2025-01-27 17:07:24,334 INFO    Thread-77 (_run_job):16862 [wandb_init.py:monkeypatch_ipython():576] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7a1b65e519c0>
+2025-01-27 17:07:24,335 INFO    Thread-77 (_run_job):16862 [wandb_init.py:init():743] calling init triggers
+2025-01-27 17:07:24,335 INFO    Thread-77 (_run_job):16862 [wandb_init.py:init():748] wandb.init called with sweep_config: {'batch_size': 32, 'epochs': 50}
+config: {}
+2025-01-27 17:07:24,335 INFO    Thread-77 (_run_job):16862 [wandb_init.py:init():776] starting backend
+2025-01-27 17:07:24,539 INFO    Thread-77 (_run_job):16862 [wandb_init.py:init():780] sending inform_init request
+2025-01-27 17:07:24,542 INFO    Thread-77 (_run_job):16862 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-27 17:07:24,543 INFO    Thread-77 (_run_job):16862 [wandb_init.py:init():795] backend started and connected
+2025-01-27 17:07:24,551 INFO    Thread-77 (_run_job):16862 [wandb_run.py:_config_callback():1270] config_cb None None {'batch_size': 32, 'epochs': 50}
+2025-01-27 17:07:24,553 INFO    Thread-77 (_run_job):16862 [wandb_run.py:_label_probe_notebook():1213] probe notebook
+2025-01-27 17:07:24,555 INFO    Thread-77 (_run_job):16862 [wandb_init.py:init():888] updated telemetry
+2025-01-27 17:07:24,563 INFO    Thread-77 (_run_job):16862 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-01-27 17:07:25,248 INFO    Thread-77 (_run_job):16862 [wandb_init.py:init():967] starting run threads in backend
+2025-01-27 17:07:25,403 INFO    Thread-77 (_run_job):16862 [wandb_run.py:_console_start():2409] atexit reg
+2025-01-27 17:07:25,404 INFO    Thread-77 (_run_job):16862 [wandb_run.py:_redirect():2259] redirect: wrap_raw
+2025-01-27 17:07:25,404 INFO    Thread-77 (_run_job):16862 [wandb_run.py:_redirect():2324] Wrapping output streams.
+2025-01-27 17:07:25,404 INFO    Thread-77 (_run_job):16862 [wandb_run.py:_redirect():2349] Redirects installed.
+2025-01-27 17:07:25,404 INFO    Thread-77 (_run_job):16862 [wandb_init.py:init():1009] run started, returning control to user process
+2025-01-27 17:09:21,715 INFO    Thread-77 (_run_job):16862 [wandb_run.py:_finish():2134] finishing run renan-florencio-unicamp/DriverBehavior/0kvkdc3y
+2025-01-27 17:09:21,716 INFO    Thread-77 (_run_job):16862 [jupyter.py:save_history():458] not saving jupyter history
+2025-01-27 17:09:21,716 INFO    Thread-77 (_run_job):16862 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 17:09:21,716 INFO    Thread-77 (_run_job):16862 [wandb_init.py:_jupyter_teardown():558] cleaning up jupyter logic
+2025-01-27 17:09:21,716 INFO    Thread-77 (_run_job):16862 [wandb_run.py:_atexit_cleanup():2374] got exitcode: 0
+2025-01-27 17:09:21,717 INFO    Thread-77 (_run_job):16862 [wandb_run.py:_restore():2356] restore
+2025-01-27 17:09:21,717 INFO    Thread-77 (_run_job):16862 [wandb_run.py:_restore():2362] restore done
+2025-01-27 17:09:24,027 INFO    Thread-77 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():3976] rendering history
+2025-01-27 17:09:24,027 INFO    Thread-77 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():4008] rendering summary
+2025-01-27 17:09:24,031 INFO    Thread-77 (_run_job):16862 [wandb_run.py:_footer_sync_info():3937] logging synced files
+2025-01-27 17:09:34,590 INFO    Thread-80 (_run_job):16862 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-27 17:09:34,590 INFO    Thread-80 (_run_job):16862 [wandb_setup.py:_flush():68] Configure stats pid to 16862
+2025-01-27 17:09:34,590 INFO    Thread-80 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/.config/wandb/settings
+2025-01-27 17:09:34,590 INFO    Thread-80 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/Documents/datasets/dbdataset/wandb/settings
+2025-01-27 17:09:34,590 INFO    Thread-80 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-27 17:09:34,591 INFO    Thread-80 (_run_job):16862 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170934-d08g61w2/logs/debug.log
+2025-01-27 17:09:34,591 INFO    Thread-80 (_run_job):16862 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170934-d08g61w2/logs/debug-internal.log
+2025-01-27 17:09:34,591 INFO    Thread-80 (_run_job):16862 [wandb_init.py:monkeypatch_ipython():576] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7a1b64139de0>
+2025-01-27 17:09:34,591 INFO    Thread-80 (_run_job):16862 [wandb_init.py:init():743] calling init triggers
+2025-01-27 17:09:34,591 INFO    Thread-80 (_run_job):16862 [wandb_init.py:init():748] wandb.init called with sweep_config: {'batch_size': 64, 'epochs': 10}
+config: {}
+2025-01-27 17:09:34,591 INFO    Thread-80 (_run_job):16862 [wandb_init.py:init():776] starting backend
+2025-01-27 17:09:34,797 INFO    Thread-80 (_run_job):16862 [wandb_init.py:init():780] sending inform_init request
+2025-01-27 17:09:34,800 INFO    Thread-80 (_run_job):16862 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-27 17:09:34,801 INFO    Thread-80 (_run_job):16862 [wandb_init.py:init():795] backend started and connected
+2025-01-27 17:09:34,810 INFO    Thread-80 (_run_job):16862 [wandb_run.py:_config_callback():1270] config_cb None None {'batch_size': 64, 'epochs': 10}
+2025-01-27 17:09:34,812 INFO    Thread-80 (_run_job):16862 [wandb_run.py:_label_probe_notebook():1213] probe notebook
+2025-01-27 17:09:34,814 INFO    Thread-80 (_run_job):16862 [wandb_init.py:init():888] updated telemetry
+2025-01-27 17:09:34,830 INFO    Thread-80 (_run_job):16862 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-01-27 17:09:35,305 INFO    Thread-80 (_run_job):16862 [wandb_init.py:init():967] starting run threads in backend
+2025-01-27 17:09:35,514 INFO    Thread-80 (_run_job):16862 [wandb_run.py:_console_start():2409] atexit reg
+2025-01-27 17:09:35,514 INFO    Thread-80 (_run_job):16862 [wandb_run.py:_redirect():2259] redirect: wrap_raw
+2025-01-27 17:09:35,514 INFO    Thread-80 (_run_job):16862 [wandb_run.py:_redirect():2324] Wrapping output streams.
+2025-01-27 17:09:35,514 INFO    Thread-80 (_run_job):16862 [wandb_run.py:_redirect():2349] Redirects installed.
+2025-01-27 17:09:35,514 INFO    Thread-80 (_run_job):16862 [wandb_init.py:init():1009] run started, returning control to user process
+2025-01-27 17:09:52,500 INFO    Thread-80 (_run_job):16862 [wandb_run.py:_finish():2134] finishing run renan-florencio-unicamp/DriverBehavior/d08g61w2
+2025-01-27 17:09:52,500 INFO    Thread-80 (_run_job):16862 [jupyter.py:save_history():458] not saving jupyter history
+2025-01-27 17:09:52,500 INFO    Thread-80 (_run_job):16862 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 17:09:52,500 INFO    Thread-80 (_run_job):16862 [wandb_init.py:_jupyter_teardown():558] cleaning up jupyter logic
+2025-01-27 17:09:52,500 INFO    Thread-80 (_run_job):16862 [wandb_run.py:_atexit_cleanup():2374] got exitcode: 0
+2025-01-27 17:09:52,501 INFO    Thread-80 (_run_job):16862 [wandb_run.py:_restore():2356] restore
+2025-01-27 17:09:52,501 INFO    Thread-80 (_run_job):16862 [wandb_run.py:_restore():2362] restore done
+2025-01-27 17:09:54,937 INFO    Thread-80 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():3976] rendering history
+2025-01-27 17:09:54,938 INFO    Thread-80 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():4008] rendering summary
+2025-01-27 17:09:54,941 INFO    Thread-80 (_run_job):16862 [wandb_run.py:_footer_sync_info():3937] logging synced files
+2025-01-27 17:09:56,159 INFO    Thread-83 (_run_job):16862 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-27 17:09:56,159 INFO    Thread-83 (_run_job):16862 [wandb_setup.py:_flush():68] Configure stats pid to 16862
+2025-01-27 17:09:56,159 INFO    Thread-83 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/.config/wandb/settings
+2025-01-27 17:09:56,159 INFO    Thread-83 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/Documents/datasets/dbdataset/wandb/settings
+2025-01-27 17:09:56,159 INFO    Thread-83 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-27 17:09:56,159 INFO    Thread-83 (_run_job):16862 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170956-3znzxxqe/logs/debug.log
+2025-01-27 17:09:56,159 INFO    Thread-83 (_run_job):16862 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170956-3znzxxqe/logs/debug-internal.log
+2025-01-27 17:09:56,160 INFO    Thread-83 (_run_job):16862 [wandb_init.py:monkeypatch_ipython():576] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7a1b675074f0>
+2025-01-27 17:09:56,160 INFO    Thread-83 (_run_job):16862 [wandb_init.py:init():743] calling init triggers
+2025-01-27 17:09:56,160 INFO    Thread-83 (_run_job):16862 [wandb_init.py:init():748] wandb.init called with sweep_config: {'batch_size': 64, 'epochs': 25}
+config: {}
+2025-01-27 17:09:56,160 INFO    Thread-83 (_run_job):16862 [wandb_init.py:init():776] starting backend
+2025-01-27 17:09:56,364 INFO    Thread-83 (_run_job):16862 [wandb_init.py:init():780] sending inform_init request
+2025-01-27 17:09:56,366 INFO    Thread-83 (_run_job):16862 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-27 17:09:56,367 INFO    Thread-83 (_run_job):16862 [wandb_init.py:init():795] backend started and connected
+2025-01-27 17:09:56,375 INFO    Thread-83 (_run_job):16862 [wandb_run.py:_config_callback():1270] config_cb None None {'batch_size': 64, 'epochs': 25}
+2025-01-27 17:09:56,376 INFO    Thread-83 (_run_job):16862 [wandb_run.py:_label_probe_notebook():1213] probe notebook
+2025-01-27 17:09:56,379 INFO    Thread-83 (_run_job):16862 [wandb_init.py:init():888] updated telemetry
+2025-01-27 17:09:56,390 INFO    Thread-83 (_run_job):16862 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-01-27 17:09:56,726 INFO    Thread-83 (_run_job):16862 [wandb_init.py:init():967] starting run threads in backend
+2025-01-27 17:09:56,865 INFO    Thread-83 (_run_job):16862 [wandb_run.py:_console_start():2409] atexit reg
+2025-01-27 17:09:56,865 INFO    Thread-83 (_run_job):16862 [wandb_run.py:_redirect():2259] redirect: wrap_raw
+2025-01-27 17:09:56,865 INFO    Thread-83 (_run_job):16862 [wandb_run.py:_redirect():2324] Wrapping output streams.
+2025-01-27 17:09:56,866 INFO    Thread-83 (_run_job):16862 [wandb_run.py:_redirect():2349] Redirects installed.
+2025-01-27 17:09:56,866 INFO    Thread-83 (_run_job):16862 [wandb_init.py:init():1009] run started, returning control to user process
+2025-01-27 17:10:35,634 INFO    Thread-83 (_run_job):16862 [wandb_run.py:_finish():2134] finishing run renan-florencio-unicamp/DriverBehavior/3znzxxqe
+2025-01-27 17:10:35,635 INFO    Thread-83 (_run_job):16862 [jupyter.py:save_history():458] not saving jupyter history
+2025-01-27 17:10:35,636 INFO    Thread-83 (_run_job):16862 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 17:10:35,636 INFO    Thread-83 (_run_job):16862 [wandb_init.py:_jupyter_teardown():558] cleaning up jupyter logic
+2025-01-27 17:10:35,636 INFO    Thread-83 (_run_job):16862 [wandb_run.py:_atexit_cleanup():2374] got exitcode: 0
+2025-01-27 17:10:35,636 INFO    Thread-83 (_run_job):16862 [wandb_run.py:_restore():2356] restore
+2025-01-27 17:10:35,636 INFO    Thread-83 (_run_job):16862 [wandb_run.py:_restore():2362] restore done
+2025-01-27 17:10:38,157 INFO    Thread-83 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():3976] rendering history
+2025-01-27 17:10:38,158 INFO    Thread-83 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():4008] rendering summary
+2025-01-27 17:10:38,161 INFO    Thread-83 (_run_job):16862 [wandb_run.py:_footer_sync_info():3937] logging synced files
+2025-01-27 17:10:43,298 INFO    Thread-86 (_run_job):16862 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-27 17:10:43,298 INFO    Thread-86 (_run_job):16862 [wandb_setup.py:_flush():68] Configure stats pid to 16862
+2025-01-27 17:10:43,298 INFO    Thread-86 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/.config/wandb/settings
+2025-01-27 17:10:43,299 INFO    Thread-86 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/Documents/datasets/dbdataset/wandb/settings
+2025-01-27 17:10:43,299 INFO    Thread-86 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-27 17:10:43,299 INFO    Thread-86 (_run_job):16862 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_171043-fp4pjgab/logs/debug.log
+2025-01-27 17:10:43,299 INFO    Thread-86 (_run_job):16862 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_171043-fp4pjgab/logs/debug-internal.log
+2025-01-27 17:10:43,299 INFO    Thread-86 (_run_job):16862 [wandb_init.py:monkeypatch_ipython():576] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7a1b6684ece0>
+2025-01-27 17:10:43,299 INFO    Thread-86 (_run_job):16862 [wandb_init.py:init():743] calling init triggers
+2025-01-27 17:10:43,299 INFO    Thread-86 (_run_job):16862 [wandb_init.py:init():748] wandb.init called with sweep_config: {'batch_size': 64, 'epochs': 50}
+config: {}
+2025-01-27 17:10:43,299 INFO    Thread-86 (_run_job):16862 [wandb_init.py:init():776] starting backend
+2025-01-27 17:10:43,503 INFO    Thread-86 (_run_job):16862 [wandb_init.py:init():780] sending inform_init request
+2025-01-27 17:10:43,504 INFO    Thread-86 (_run_job):16862 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-27 17:10:43,505 INFO    Thread-86 (_run_job):16862 [wandb_init.py:init():795] backend started and connected
+2025-01-27 17:10:43,510 INFO    Thread-86 (_run_job):16862 [wandb_run.py:_config_callback():1270] config_cb None None {'batch_size': 64, 'epochs': 50}
+2025-01-27 17:10:43,512 INFO    Thread-86 (_run_job):16862 [wandb_run.py:_label_probe_notebook():1213] probe notebook
+2025-01-27 17:10:43,513 INFO    Thread-86 (_run_job):16862 [wandb_init.py:init():888] updated telemetry
+2025-01-27 17:10:43,524 INFO    Thread-86 (_run_job):16862 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-01-27 17:10:44,016 INFO    Thread-86 (_run_job):16862 [wandb_init.py:init():967] starting run threads in backend
+2025-01-27 17:10:44,154 INFO    Thread-86 (_run_job):16862 [wandb_run.py:_console_start():2409] atexit reg
+2025-01-27 17:10:44,154 INFO    Thread-86 (_run_job):16862 [wandb_run.py:_redirect():2259] redirect: wrap_raw
+2025-01-27 17:10:44,154 INFO    Thread-86 (_run_job):16862 [wandb_run.py:_redirect():2324] Wrapping output streams.
+2025-01-27 17:10:44,154 INFO    Thread-86 (_run_job):16862 [wandb_run.py:_redirect():2349] Redirects installed.
+2025-01-27 17:10:44,155 INFO    Thread-86 (_run_job):16862 [wandb_init.py:init():1009] run started, returning control to user process
+2025-01-27 17:12:00,142 INFO    Thread-86 (_run_job):16862 [wandb_run.py:_finish():2134] finishing run renan-florencio-unicamp/DriverBehavior/fp4pjgab
+2025-01-27 17:12:00,143 INFO    Thread-86 (_run_job):16862 [jupyter.py:save_history():458] not saving jupyter history
+2025-01-27 17:12:00,144 INFO    Thread-86 (_run_job):16862 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 17:12:00,144 INFO    Thread-86 (_run_job):16862 [wandb_init.py:_jupyter_teardown():558] cleaning up jupyter logic
+2025-01-27 17:12:00,144 INFO    Thread-86 (_run_job):16862 [wandb_run.py:_atexit_cleanup():2374] got exitcode: 0
+2025-01-27 17:12:00,144 INFO    Thread-86 (_run_job):16862 [wandb_run.py:_restore():2356] restore
+2025-01-27 17:12:00,144 INFO    Thread-86 (_run_job):16862 [wandb_run.py:_restore():2362] restore done
+2025-01-27 17:12:02,537 INFO    Thread-86 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():3976] rendering history
+2025-01-27 17:12:02,537 INFO    Thread-86 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():4008] rendering summary
+2025-01-27 17:12:02,541 INFO    Thread-86 (_run_job):16862 [wandb_run.py:_footer_sync_info():3937] logging synced files
+2025-01-27 17:12:06,954 INFO    Thread-89 (_run_job):16862 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-27 17:12:06,954 INFO    Thread-89 (_run_job):16862 [wandb_setup.py:_flush():68] Configure stats pid to 16862
+2025-01-27 17:12:06,954 INFO    Thread-89 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/.config/wandb/settings
+2025-01-27 17:12:06,954 INFO    Thread-89 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/Documents/datasets/dbdataset/wandb/settings
+2025-01-27 17:12:06,954 INFO    Thread-89 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-27 17:12:06,954 INFO    Thread-89 (_run_job):16862 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_171206-x95rt9bq/logs/debug.log
+2025-01-27 17:12:06,955 INFO    Thread-89 (_run_job):16862 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_171206-x95rt9bq/logs/debug-internal.log
+2025-01-27 17:12:06,955 INFO    Thread-89 (_run_job):16862 [wandb_init.py:monkeypatch_ipython():576] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7a1b584e8f10>
+2025-01-27 17:12:06,955 INFO    Thread-89 (_run_job):16862 [wandb_init.py:init():743] calling init triggers
+2025-01-27 17:12:06,955 INFO    Thread-89 (_run_job):16862 [wandb_init.py:init():748] wandb.init called with sweep_config: {'batch_size': 128, 'epochs': 10}
+config: {}
+2025-01-27 17:12:06,955 INFO    Thread-89 (_run_job):16862 [wandb_init.py:init():776] starting backend
+2025-01-27 17:12:07,158 INFO    Thread-89 (_run_job):16862 [wandb_init.py:init():780] sending inform_init request
+2025-01-27 17:12:07,160 INFO    Thread-89 (_run_job):16862 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-27 17:12:07,161 INFO    Thread-89 (_run_job):16862 [wandb_init.py:init():795] backend started and connected
+2025-01-27 17:12:07,171 INFO    Thread-89 (_run_job):16862 [wandb_run.py:_config_callback():1270] config_cb None None {'batch_size': 128, 'epochs': 10}
+2025-01-27 17:12:07,174 INFO    Thread-89 (_run_job):16862 [wandb_run.py:_label_probe_notebook():1213] probe notebook
+2025-01-27 17:12:07,178 INFO    Thread-89 (_run_job):16862 [wandb_init.py:init():888] updated telemetry
+2025-01-27 17:12:07,191 INFO    Thread-89 (_run_job):16862 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-01-27 17:12:07,675 INFO    Thread-89 (_run_job):16862 [wandb_init.py:init():967] starting run threads in backend
+2025-01-27 17:12:07,821 INFO    Thread-89 (_run_job):16862 [wandb_run.py:_console_start():2409] atexit reg
+2025-01-27 17:12:07,821 INFO    Thread-89 (_run_job):16862 [wandb_run.py:_redirect():2259] redirect: wrap_raw
+2025-01-27 17:12:07,821 INFO    Thread-89 (_run_job):16862 [wandb_run.py:_redirect():2324] Wrapping output streams.
+2025-01-27 17:12:07,822 INFO    Thread-89 (_run_job):16862 [wandb_run.py:_redirect():2349] Redirects installed.
+2025-01-27 17:12:07,822 INFO    Thread-89 (_run_job):16862 [wandb_init.py:init():1009] run started, returning control to user process
+2025-01-27 17:12:20,405 INFO    Thread-89 (_run_job):16862 [wandb_run.py:_finish():2134] finishing run renan-florencio-unicamp/DriverBehavior/x95rt9bq
+2025-01-27 17:12:20,406 INFO    Thread-89 (_run_job):16862 [jupyter.py:save_history():458] not saving jupyter history
+2025-01-27 17:12:20,406 INFO    Thread-89 (_run_job):16862 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 17:12:20,406 INFO    Thread-89 (_run_job):16862 [wandb_init.py:_jupyter_teardown():558] cleaning up jupyter logic
+2025-01-27 17:12:20,406 INFO    Thread-89 (_run_job):16862 [wandb_run.py:_atexit_cleanup():2374] got exitcode: 0
+2025-01-27 17:12:20,406 INFO    Thread-89 (_run_job):16862 [wandb_run.py:_restore():2356] restore
+2025-01-27 17:12:20,406 INFO    Thread-89 (_run_job):16862 [wandb_run.py:_restore():2362] restore done
+2025-01-27 17:12:22,607 INFO    Thread-89 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():3976] rendering history
+2025-01-27 17:12:22,608 INFO    Thread-89 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():4008] rendering summary
+2025-01-27 17:12:22,611 INFO    Thread-89 (_run_job):16862 [wandb_run.py:_footer_sync_info():3937] logging synced files
+2025-01-27 17:12:27,998 INFO    Thread-92 (_run_job):16862 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-27 17:12:27,998 INFO    Thread-92 (_run_job):16862 [wandb_setup.py:_flush():68] Configure stats pid to 16862
+2025-01-27 17:12:27,998 INFO    Thread-92 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/.config/wandb/settings
+2025-01-27 17:12:27,998 INFO    Thread-92 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/Documents/datasets/dbdataset/wandb/settings
+2025-01-27 17:12:27,998 INFO    Thread-92 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-27 17:12:27,999 INFO    Thread-92 (_run_job):16862 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_171227-huhy15vj/logs/debug.log
+2025-01-27 17:12:27,999 INFO    Thread-92 (_run_job):16862 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_171227-huhy15vj/logs/debug-internal.log
+2025-01-27 17:12:27,999 INFO    Thread-92 (_run_job):16862 [wandb_init.py:monkeypatch_ipython():576] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7a1b580d81f0>
+2025-01-27 17:12:27,999 INFO    Thread-92 (_run_job):16862 [wandb_init.py:init():743] calling init triggers
+2025-01-27 17:12:27,999 INFO    Thread-92 (_run_job):16862 [wandb_init.py:init():748] wandb.init called with sweep_config: {'batch_size': 128, 'epochs': 25}
+config: {}
+2025-01-27 17:12:27,999 INFO    Thread-92 (_run_job):16862 [wandb_init.py:init():776] starting backend
+2025-01-27 17:12:28,204 INFO    Thread-92 (_run_job):16862 [wandb_init.py:init():780] sending inform_init request
+2025-01-27 17:12:28,207 INFO    Thread-92 (_run_job):16862 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-27 17:12:28,209 INFO    Thread-92 (_run_job):16862 [wandb_init.py:init():795] backend started and connected
+2025-01-27 17:12:28,221 INFO    Thread-92 (_run_job):16862 [wandb_run.py:_config_callback():1270] config_cb None None {'batch_size': 128, 'epochs': 25}
+2025-01-27 17:12:28,224 INFO    Thread-92 (_run_job):16862 [wandb_run.py:_label_probe_notebook():1213] probe notebook
+2025-01-27 17:12:28,226 INFO    Thread-92 (_run_job):16862 [wandb_init.py:init():888] updated telemetry
+2025-01-27 17:12:28,236 INFO    Thread-92 (_run_job):16862 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-01-27 17:12:28,655 INFO    Thread-92 (_run_job):16862 [wandb_init.py:init():967] starting run threads in backend
+2025-01-27 17:12:28,858 INFO    Thread-92 (_run_job):16862 [wandb_run.py:_console_start():2409] atexit reg
+2025-01-27 17:12:28,859 INFO    Thread-92 (_run_job):16862 [wandb_run.py:_redirect():2259] redirect: wrap_raw
+2025-01-27 17:12:28,859 INFO    Thread-92 (_run_job):16862 [wandb_run.py:_redirect():2324] Wrapping output streams.
+2025-01-27 17:12:28,859 INFO    Thread-92 (_run_job):16862 [wandb_run.py:_redirect():2349] Redirects installed.
+2025-01-27 17:12:28,859 INFO    Thread-92 (_run_job):16862 [wandb_init.py:init():1009] run started, returning control to user process
+2025-01-27 17:12:57,374 INFO    Thread-92 (_run_job):16862 [wandb_run.py:_finish():2134] finishing run renan-florencio-unicamp/DriverBehavior/huhy15vj
+2025-01-27 17:12:57,375 INFO    Thread-92 (_run_job):16862 [jupyter.py:save_history():458] not saving jupyter history
+2025-01-27 17:12:57,375 INFO    Thread-92 (_run_job):16862 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 17:12:57,375 INFO    Thread-92 (_run_job):16862 [wandb_init.py:_jupyter_teardown():558] cleaning up jupyter logic
+2025-01-27 17:12:57,375 INFO    Thread-92 (_run_job):16862 [wandb_run.py:_atexit_cleanup():2374] got exitcode: 0
+2025-01-27 17:12:57,375 INFO    Thread-92 (_run_job):16862 [wandb_run.py:_restore():2356] restore
+2025-01-27 17:12:57,375 INFO    Thread-92 (_run_job):16862 [wandb_run.py:_restore():2362] restore done
+2025-01-27 17:12:59,576 INFO    Thread-92 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():3976] rendering history
+2025-01-27 17:12:59,576 INFO    Thread-92 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():4008] rendering summary
+2025-01-27 17:12:59,580 INFO    Thread-92 (_run_job):16862 [wandb_run.py:_footer_sync_info():3937] logging synced files
+2025-01-27 17:13:05,024 INFO    Thread-95 (_run_job):16862 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-27 17:13:05,024 INFO    Thread-95 (_run_job):16862 [wandb_setup.py:_flush():68] Configure stats pid to 16862
+2025-01-27 17:13:05,025 INFO    Thread-95 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/.config/wandb/settings
+2025-01-27 17:13:05,025 INFO    Thread-95 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from /home/renan/Documents/datasets/dbdataset/wandb/settings
+2025-01-27 17:13:05,025 INFO    Thread-95 (_run_job):16862 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-27 17:13:05,025 INFO    Thread-95 (_run_job):16862 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_171305-xgjz54bz/logs/debug.log
+2025-01-27 17:13:05,025 INFO    Thread-95 (_run_job):16862 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/renan/Documents/datasets/dbdataset/wandb/run-20250127_171305-xgjz54bz/logs/debug-internal.log
+2025-01-27 17:13:05,025 INFO    Thread-95 (_run_job):16862 [wandb_init.py:monkeypatch_ipython():576] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7a1b4c2401f0>
+2025-01-27 17:13:05,025 INFO    Thread-95 (_run_job):16862 [wandb_init.py:init():743] calling init triggers
+2025-01-27 17:13:05,025 INFO    Thread-95 (_run_job):16862 [wandb_init.py:init():748] wandb.init called with sweep_config: {'batch_size': 128, 'epochs': 50}
+config: {}
+2025-01-27 17:13:05,025 INFO    Thread-95 (_run_job):16862 [wandb_init.py:init():776] starting backend
+2025-01-27 17:13:05,230 INFO    Thread-95 (_run_job):16862 [wandb_init.py:init():780] sending inform_init request
+2025-01-27 17:13:05,233 INFO    Thread-95 (_run_job):16862 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-01-27 17:13:05,234 INFO    Thread-95 (_run_job):16862 [wandb_init.py:init():795] backend started and connected
+2025-01-27 17:13:05,242 INFO    Thread-95 (_run_job):16862 [wandb_run.py:_config_callback():1270] config_cb None None {'batch_size': 128, 'epochs': 50}
+2025-01-27 17:13:05,244 INFO    Thread-95 (_run_job):16862 [wandb_run.py:_label_probe_notebook():1213] probe notebook
+2025-01-27 17:13:05,246 INFO    Thread-95 (_run_job):16862 [wandb_init.py:init():888] updated telemetry
+2025-01-27 17:13:05,258 INFO    Thread-95 (_run_job):16862 [wandb_init.py:init():915] communicating run to backend with 90.0 second timeout
+2025-01-27 17:13:05,736 INFO    Thread-95 (_run_job):16862 [wandb_init.py:init():967] starting run threads in backend
+2025-01-27 17:13:05,889 INFO    Thread-95 (_run_job):16862 [wandb_run.py:_console_start():2409] atexit reg
+2025-01-27 17:13:05,889 INFO    Thread-95 (_run_job):16862 [wandb_run.py:_redirect():2259] redirect: wrap_raw
+2025-01-27 17:13:05,889 INFO    Thread-95 (_run_job):16862 [wandb_run.py:_redirect():2324] Wrapping output streams.
+2025-01-27 17:13:05,889 INFO    Thread-95 (_run_job):16862 [wandb_run.py:_redirect():2349] Redirects installed.
+2025-01-27 17:13:05,890 INFO    Thread-95 (_run_job):16862 [wandb_init.py:init():1009] run started, returning control to user process
+2025-01-27 17:14:02,117 INFO    Thread-95 (_run_job):16862 [wandb_run.py:_finish():2134] finishing run renan-florencio-unicamp/DriverBehavior/xgjz54bz
+2025-01-27 17:14:02,118 INFO    Thread-95 (_run_job):16862 [jupyter.py:save_history():458] not saving jupyter history
+2025-01-27 17:14:02,118 INFO    Thread-95 (_run_job):16862 [jupyter.py:save_ipynb():386] not saving jupyter notebook
+2025-01-27 17:14:02,119 INFO    Thread-95 (_run_job):16862 [wandb_init.py:_jupyter_teardown():558] cleaning up jupyter logic
+2025-01-27 17:14:02,119 INFO    Thread-95 (_run_job):16862 [wandb_run.py:_atexit_cleanup():2374] got exitcode: 0
+2025-01-27 17:14:02,119 INFO    Thread-95 (_run_job):16862 [wandb_run.py:_restore():2356] restore
+2025-01-27 17:14:02,119 INFO    Thread-95 (_run_job):16862 [wandb_run.py:_restore():2362] restore done
+2025-01-27 17:14:04,598 INFO    Thread-95 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():3976] rendering history
+2025-01-27 17:14:04,599 INFO    Thread-95 (_run_job):16862 [wandb_run.py:_footer_history_summary_info():4008] rendering summary
+2025-01-27 17:14:04,603 INFO    Thread-95 (_run_job):16862 [wandb_run.py:_footer_sync_info():3937] logging synced files

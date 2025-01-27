@@ -1,0 +1,16 @@
+{"time":"2025-01-27T17:06:21.764306121-03:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170621-syfu5ppp/logs/debug-core.log"}
+{"time":"2025-01-27T17:06:21.869471472-03:00","level":"INFO","msg":"created new stream","id":"syfu5ppp"}
+{"time":"2025-01-27T17:06:21.869547259-03:00","level":"INFO","msg":"stream: started","id":"syfu5ppp"}
+{"time":"2025-01-27T17:06:21.86973411-03:00","level":"INFO","msg":"handler: started","stream_id":"syfu5ppp"}
+{"time":"2025-01-27T17:06:21.86974215-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"syfu5ppp"}
+{"time":"2025-01-27T17:06:21.86989497-03:00","level":"INFO","msg":"sender: started","stream_id":"syfu5ppp"}
+{"time":"2025-01-27T17:06:22.280358042-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-27T17:07:17.708483644-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-27T17:07:17.708928693-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-27T17:07:18.710693008-03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.22223935,"progress":"652B/652B"}],"total_operations":1}}
+{"time":"2025-01-27T17:07:18.795786521-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-27T17:07:20.126371909-03:00","level":"INFO","msg":"stream: closing","id":"syfu5ppp"}
+{"time":"2025-01-27T17:07:20.12640887-03:00","level":"INFO","msg":"handler: closed","stream_id":"syfu5ppp"}
+{"time":"2025-01-27T17:07:20.126427658-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"syfu5ppp"}
+{"time":"2025-01-27T17:07:20.126440667-03:00","level":"INFO","msg":"sender: closed","stream_id":"syfu5ppp"}
+{"time":"2025-01-27T17:07:20.126532402-03:00","level":"INFO","msg":"stream: closed","id":"syfu5ppp"}

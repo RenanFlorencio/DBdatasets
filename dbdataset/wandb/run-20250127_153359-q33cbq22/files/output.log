@@ -1,0 +1,560 @@
+[{'aceleracao_agressiva': {'precision': 0.7777777777777778, 'recall': 0.7439613526570048, 'f1-score': 0.7604938271604939, 'support': 414.0}, 'curva_direita_agressiva': {'precision': 0.8846153846153846, 'recall': 0.8914728682170543, 'f1-score': 0.888030888030888, 'support': 387.0}, 'curva_esquerda_agressiva': {'precision': 0.9068493150684932, 'recall': 0.9068493150684932, 'f1-score': 0.9068493150684932, 'support': 365.0}, 'evento_nao_agressivo': {'precision': 0.7440944881889764, 'recall': 0.7875, 'f1-score': 0.7651821862348178, 'support': 480.0}, 'freada_agressiva': {'precision': 0.8620689655172413, 'recall': 0.8090614886731392, 'f1-score': 0.8347245409015025, 'support': 309.0}, 'troca_faixa_direita_agressiva': {'precision': 0.5858585858585859, 'recall': 0.6170212765957447, 'f1-score': 0.6010362694300518, 'support': 94.0}, 'troca_faixa_esquerda_agressiva': {'precision': 0.4823529411764706, 'recall': 0.4880952380952381, 'f1-score': 0.48520710059171596, 'support': 84.0}, 'accuracy': 0.8021565869667135, 'macro avg': {'precision': 0.7490882083147042, 'recall': 0.7491373627580964, 'f1-score': 0.7487891610597092, 'support': 2133.0}, 'weighted avg': {'precision': 0.8037877040090111, 'recall': 0.8021565869667135, 'f1-score': 0.8026181605343666, 'support': 2133.0}}, {'aceleracao_agressiva': {'precision': 0.6856617647058824, 'recall': 0.9009661835748792, 'f1-score': 0.778705636743215, 'support': 414.0}, 'curva_direita_agressiva': {'precision': 0.8425925925925926, 'recall': 0.9405684754521964, 'f1-score': 0.8888888888888888, 'support': 387.0}, 'curva_esquerda_agressiva': {'precision': 0.864321608040201, 'recall': 0.9424657534246575, 'f1-score': 0.9017038007863696, 'support': 365.0}, 'evento_nao_agressivo': {'precision': 0.8051044083526682, 'recall': 0.7229166666666667, 'f1-score': 0.7618002195389681, 'support': 480.0}, 'freada_agressiva': {'precision': 0.9506172839506173, 'recall': 0.7475728155339806, 'f1-score': 0.8369565217391305, 'support': 309.0}, 'troca_faixa_direita_agressiva': {'precision': 0.7758620689655172, 'recall': 0.4787234042553192, 'f1-score': 0.5921052631578947, 'support': 94.0}, 'troca_faixa_esquerda_agressiva': {'precision': 0.8888888888888888, 'recall': 0.2857142857142857, 'f1-score': 0.43243243243243246, 'support': 84.0}, 'accuracy': 0.810126582278481, 'macro avg': {'precision': 0.830435516499481, 'recall': 0.7169896549459979, 'f1-score': 0.7417989661838428, 'support': 2133.0}, 'weighted avg': {'precision': 0.8219471395947908, 'recall': 0.810126582278481, 'f1-score': 0.8025184765850812, 'support': 2133.0}}, {'aceleracao_agressiva': {'precision': 0.756701030927835, 'recall': 0.8864734299516909, 'f1-score': 0.8164627363737486, 'support': 414.0}, 'curva_direita_agressiva': {'precision': 0.8961352657004831, 'recall': 0.958656330749354, 'f1-score': 0.9263420724094882, 'support': 387.0}, 'curva_esquerda_agressiva': {'precision': 0.9095744680851063, 'recall': 0.936986301369863, 'f1-score': 0.9230769230769231, 'support': 365.0}, 'evento_nao_agressivo': {'precision': 0.8596112311015118, 'recall': 0.8291666666666667, 'f1-score': 0.8441145281018028, 'support': 480.0}, 'freada_agressiva': {'precision': 0.9456521739130435, 'recall': 0.8446601941747572, 'f1-score': 0.8923076923076924, 'support': 309.0}, 'troca_faixa_direita_agressiva': {'precision': 0.890625, 'recall': 0.6063829787234043, 'f1-score': 0.7215189873417721, 'support': 94.0}, 'troca_faixa_esquerda_agressiva': {'precision': 0.8545454545454545, 'recall': 0.5595238095238095, 'f1-score': 0.6762589928057554, 'support': 84.0}, 'accuracy': 0.8640412564463197, 'macro avg': {'precision': 0.8732635177533478, 'recall': 0.8031213873085065, 'f1-score': 0.8285831332024547, 'support': 2133.0}, 'weighted avg': {'precision': 0.8684452584767692, 'recall': 0.8640412564463197, 'f1-score': 0.86214703348431, 'support': 2133.0}}, {'aceleracao_agressiva': {'precision': 0.7991543340380549, 'recall': 0.9130434782608695, 'f1-score': 0.8523111612175873, 'support': 414.0}, 'curva_direita_agressiva': {'precision': 0.9053398058252428, 'recall': 0.9638242894056848, 'f1-score': 0.9336670838548186,
+Fitting 5 folds for each of 12 candidates, totalling 60 fits
+[CV 1/5] END ......C=0.1, gamma=0.1, kernel=rbf;, score=0.593 total time=   3.3s
+[CV 2/5] END ......C=0.1, gamma=0.1, kernel=rbf;, score=0.594 total time=   3.2s
+[CV 3/5] END ......C=0.1, gamma=0.1, kernel=rbf;, score=0.610 total time=   3.1s
+[CV 4/5] END ......C=0.1, gamma=0.1, kernel=rbf;, score=0.602 total time=   3.1s
+[CV 5/5] END ......C=0.1, gamma=0.1, kernel=rbf;, score=0.601 total time=   3.1s
+[CV 1/5] END .....C=0.1, gamma=0.01, kernel=rbf;, score=0.788 total time=   1.8s
+[CV 2/5] END .....C=0.1, gamma=0.01, kernel=rbf;, score=0.801 total time=   1.8s
+[CV 3/5] END .....C=0.1, gamma=0.01, kernel=rbf;, score=0.809 total time=   1.8s
+[CV 4/5] END .....C=0.1, gamma=0.01, kernel=rbf;, score=0.779 total time=   1.8s
+[CV 5/5] END .....C=0.1, gamma=0.01, kernel=rbf;, score=0.791 total time=   1.8s
+[CV 1/5] END ....C=0.1, gamma=0.001, kernel=rbf;, score=0.550 total time=   2.4s
+[CV 2/5] END ....C=0.1, gamma=0.001, kernel=rbf;, score=0.543 total time=   2.5s
+[CV 3/5] END ....C=0.1, gamma=0.001, kernel=rbf;, score=0.564 total time=   2.8s
+[CV 4/5] END ....C=0.1, gamma=0.001, kernel=rbf;, score=0.538 total time=   2.6s
+[CV 5/5] END ....C=0.1, gamma=0.001, kernel=rbf;, score=0.551 total time=   4.0s
+[CV 1/5] END ........C=1, gamma=0.1, kernel=rbf;, score=0.817 total time=   4.4s
+[CV 2/5] END ........C=1, gamma=0.1, kernel=rbf;, score=0.803 total time=   4.8s
+[CV 3/5] END ........C=1, gamma=0.1, kernel=rbf;, score=0.826 total time=   4.2s
+[CV 4/5] END ........C=1, gamma=0.1, kernel=rbf;, score=0.813 total time=   3.5s
+[CV 5/5] END ........C=1, gamma=0.1, kernel=rbf;, score=0.807 total time=   3.8s
+[CV 1/5] END .......C=1, gamma=0.01, kernel=rbf;, score=0.879 total time=   1.8s
+[CV 2/5] END .......C=1, gamma=0.01, kernel=rbf;, score=0.902 total time=   1.7s
+[CV 3/5] END .......C=1, gamma=0.01, kernel=rbf;, score=0.908 total time=   1.8s
+[CV 4/5] END .......C=1, gamma=0.01, kernel=rbf;, score=0.877 total time=   1.4s
+[CV 5/5] END .......C=1, gamma=0.01, kernel=rbf;, score=0.883 total time=   1.5s
+[CV 1/5] END ......C=1, gamma=0.001, kernel=rbf;, score=0.760 total time=   2.6s
+[CV 2/5] END ......C=1, gamma=0.001, kernel=rbf;, score=0.772 total time=   2.2s
+[CV 3/5] END ......C=1, gamma=0.001, kernel=rbf;, score=0.781 total time=   2.1s
+[CV 4/5] END ......C=1, gamma=0.001, kernel=rbf;, score=0.741 total time=   2.0s
+[CV 5/5] END ......C=1, gamma=0.001, kernel=rbf;, score=0.758 total time=   2.2s
+[CV 1/5] END .......C=10, gamma=0.1, kernel=rbf;, score=0.835 total time=   4.8s
+[CV 2/5] END .......C=10, gamma=0.1, kernel=rbf;, score=0.821 total time=   4.5s
+[CV 3/5] END .......C=10, gamma=0.1, kernel=rbf;, score=0.843 total time=   3.8s
+[CV 4/5] END .......C=10, gamma=0.1, kernel=rbf;, score=0.824 total time=   4.7s
+[CV 5/5] END .......C=10, gamma=0.1, kernel=rbf;, score=0.824 total time=   4.3s
+[CV 1/5] END ......C=10, gamma=0.01, kernel=rbf;, score=0.926 total time=   1.1s
+[CV 2/5] END ......C=10, gamma=0.01, kernel=rbf;, score=0.936 total time=   1.1s
+[CV 3/5] END ......C=10, gamma=0.01, kernel=rbf;, score=0.941 total time=   1.1s
+[CV 4/5] END ......C=10, gamma=0.01, kernel=rbf;, score=0.930 total time=   1.1s
+[CV 5/5] END ......C=10, gamma=0.01, kernel=rbf;, score=0.935 total time=   1.2s
+[CV 1/5] END .....C=10, gamma=0.001, kernel=rbf;, score=0.834 total time=   1.5s
+[CV 2/5] END .....C=10, gamma=0.001, kernel=rbf;, score=0.856 total time=   1.5s
+[CV 3/5] END .....C=10, gamma=0.001, kernel=rbf;, score=0.865 total time=   1.7s
+[CV 4/5] END .....C=10, gamma=0.001, kernel=rbf;, score=0.829 total time=   1.7s
+[CV 5/5] END .....C=10, gamma=0.001, kernel=rbf;, score=0.843 total time=   2.1s
+[CV 1/5] END ......C=100, gamma=0.1, kernel=rbf;, score=0.835 total time=   5.0s
+[CV 2/5] END ......C=100, gamma=0.1, kernel=rbf;, score=0.820 total time=   3.8s
+[CV 3/5] END ......C=100, gamma=0.1, kernel=rbf;, score=0.845 total time=   3.8s
+[CV 4/5] END ......C=100, gamma=0.1, kernel=rbf;, score=0.822 total time=   4.1s
+[CV 5/5] END ......C=100, gamma=0.1, kernel=rbf;, score=0.825 total time=   4.5s
+[CV 1/5] END .....C=100, gamma=0.01, kernel=rbf;, score=0.941 total time=   1.3s
+[CV 2/5] END .....C=100, gamma=0.01, kernel=rbf;, score=0.940 total time=   1.2s
+[CV 3/5] END .....C=100, gamma=0.01, kernel=rbf;, score=0.943 total time=   1.2s
+[CV 4/5] END .....C=100, gamma=0.01, kernel=rbf;, score=0.936 total time=   1.1s
+[CV 5/5] END .....C=100, gamma=0.01, kernel=rbf;, score=0.943 total time=   1.1s
+[CV 1/5] END ....C=100, gamma=0.001, kernel=rbf;, score=0.890 total time=   1.1s
+[CV 2/5] END ....C=100, gamma=0.001, kernel=rbf;, score=0.907 total time=   1.2s
+[CV 3/5] END ....C=100, gamma=0.001, kernel=rbf;, score=0.909 total time=   1.2s
+[CV 4/5] END ....C=100, gamma=0.001, kernel=rbf;, score=0.882 total time=   1.1s
+[CV 5/5] END ....C=100, gamma=0.001, kernel=rbf;, score=0.890 total time=   1.0s
+Classification report:
+                                precision    recall  f1-score   support
+
+          aceleracao_agressiva       0.94      0.98      0.96       414
+       curva_direita_agressiva       0.95      1.00      0.98       387
+      curva_esquerda_agressiva       0.98      0.99      0.99       365
+          evento_nao_agressivo       0.93      0.94      0.93       480
+              freada_agressiva       0.99      0.95      0.97       309
+ troca_faixa_direita_agressiva       1.00      0.84      0.91        94
+troca_faixa_esquerda_agressiva       0.97      0.80      0.88        84
+
+                      accuracy                           0.96      2133
+                     macro avg       0.97      0.93      0.95      2133
+                  weighted avg       0.96      0.96      0.96      2133
+
+{'C': 100, 'gamma': 0.01, 'kernel': 'rbf'}
+Fitting 5 folds for each of 6 candidates, totalling 30 fits
+[CV 1/5] END ...................n_estimators=50;, score=0.934 total time=   3.7s
+[CV 4/5] END ...................n_estimators=50;, score=0.933 total time=   3.6s
+[CV 3/5] END ...................n_estimators=50;, score=0.944 total time=   4.8s
+[CV 2/5] END ...................n_estimators=50;, score=0.949 total time=   5.0s
+[CV 5/5] END ...................n_estimators=50;, score=0.950 total time=   5.0s
+[CV 3/5] END ..................n_estimators=100;, score=0.949 total time=   7.6s
+[CV 1/5] END ..................n_estimators=100;, score=0.937 total time=   8.8s
+[CV 2/5] END ..................n_estimators=100;, score=0.953 total time=  10.7s
+[CV 4/5] END ..................n_estimators=100;, score=0.943 total time=  11.6s
+[CV 5/5] END ..................n_estimators=100;, score=0.954 total time=  12.5s
+[CV 1/5] END ..................n_estimators=200;, score=0.940 total time=  27.4s
+[CV 2/5] END ..................n_estimators=200;, score=0.953 total time=  29.0s
+[CV 4/5] END ..................n_estimators=200;, score=0.944 total time=  26.4s
+[CV 3/5] END ..................n_estimators=200;, score=0.951 total time=  29.0s
+[CV 5/5] END ..................n_estimators=200;, score=0.958 total time=  32.7s
+[CV 2/5] END ..................n_estimators=300;, score=0.955 total time=  44.6s
+[CV 1/5] END ..................n_estimators=300;, score=0.940 total time=  50.1s
+[CV 3/5] END ..................n_estimators=300;, score=0.951 total time=  50.7s
+[CV 5/5] END ..................n_estimators=300;, score=0.960 total time=  49.5s
+[CV 4/5] END ..................n_estimators=300;, score=0.944 total time=  51.2s
+[CV 1/5] END ..................n_estimators=400;, score=0.938 total time= 1.1min
+[CV 2/5] END ..................n_estimators=400;, score=0.956 total time= 1.1min
+[CV 3/5] END ..................n_estimators=400;, score=0.951 total time= 1.0min
+[CV 5/5] END ..................n_estimators=400;, score=0.960 total time=  59.9s
+[CV 4/5] END ..................n_estimators=400;, score=0.946 total time= 1.0min
+[CV 2/5] END ..................n_estimators=500;, score=0.956 total time= 1.1min
+[CV 1/5] END ..................n_estimators=500;, score=0.938 total time= 1.3min
+[CV 3/5] END ..................n_estimators=500;, score=0.950 total time=  59.6s
+[CV 4/5] END ..................n_estimators=500;, score=0.946 total time=  58.1s
+[CV 5/5] END ..................n_estimators=500;, score=0.958 total time=  58.7s
+{'n_estimators': 400}
+Classification report:
+{'aceleracao_agressiva': {'precision': 0.9376443418013857, 'recall': 0.9806763285024155, 'f1-score': 0.9586776859504132, 'support': 414.0}, 'curva_direita_agressiva': {'precision': 0.9626865671641791, 'recall': 1.0, 'f1-score': 0.9809885931558935, 'support': 387.0}, 'curva_esquerda_agressiva': {'precision': 0.9783783783783784, 'recall': 0.9917808219178083, 'f1-score': 0.9850340136054422, 'support': 365.0}, 'evento_nao_agressivo': {'precision': 0.9300411522633745, 'recall': 0.9416666666666667, 'f1-score': 0.9358178053830227, 'support': 480.0}, 'freada_agressiva': {'precision': 0.9931972789115646, 'recall': 0.9449838187702265, 'f1-score': 0.9684908789386402, 'support': 309.0}, 'troca_faixa_direita_agressiva': {'precision': 1.0, 'recall': 0.8404255319148937, 'f1-score': 0.9132947976878613, 'support': 94.0}, 'troca_faixa_esquerda_agressiva': {'precision': 0.9855072463768116, 'recall': 0.8095238095238095, 'f1-score': 0.8888888888888888, 'support': 84.0}, 'accuracy': 0.9592123769338959, 'macro avg': {'precision': 0.9696364235565277, 'recall': 0.9298652824708313, 'f1-score': 0.9473132376585947, 'support': 2133.0}, 'weighted avg': {'precision': 0.9601279362738699, 'recall': 0.9592123769338959, 'f1-score': 0.9587647296418211, 'support': 2133.0}}
+{'n_estimators': 400}
+Classification report:
+                                precision    recall  f1-score   support
+
+          aceleracao_agressiva       0.94      0.98      0.96       414
+       curva_direita_agressiva       0.96      1.00      0.98       387
+      curva_esquerda_agressiva       0.98      0.99      0.99       365
+          evento_nao_agressivo       0.93      0.94      0.94       480
+              freada_agressiva       0.99      0.94      0.97       309
+ troca_faixa_direita_agressiva       1.00      0.84      0.91        94
+troca_faixa_esquerda_agressiva       0.99      0.81      0.89        84
+
+                      accuracy                           0.96      2133
+                     macro avg       0.97      0.93      0.95      2133
+                  weighted avg       0.96      0.96      0.96      2133
+
+Fitting 5 folds for each of 4 candidates, totalling 20 fits
+[CV 1/5] END ...................n_estimators=50;, score=0.934 total time=   4.5s
+[CV 4/5] END ...................n_estimators=50;, score=0.933 total time=   4.5s
+[CV 5/5] END ...................n_estimators=50;, score=0.950 total time=   4.6s
+[CV 3/5] END ...................n_estimators=50;, score=0.944 total time=   4.8s
+[CV 2/5] END ...................n_estimators=50;, score=0.949 total time=   4.9s
+[CV 1/5] END ..................n_estimators=100;, score=0.937 total time=   6.9s
+[CV 3/5] END ..................n_estimators=100;, score=0.949 total time=   7.3s
+[CV 2/5] END ..................n_estimators=100;, score=0.953 total time=   7.9s
+[CV 5/5] END ..................n_estimators=100;, score=0.954 total time=   8.9s
+[CV 4/5] END ..................n_estimators=100;, score=0.943 total time=   9.4s
+[CV 2/5] END ..................n_estimators=200;, score=0.953 total time=  19.3s
+[CV 1/5] END ..................n_estimators=200;, score=0.940 total time=  23.5s
+[CV 4/5] END ..................n_estimators=200;, score=0.944 total time=  23.9s
+[CV 5/5] END ..................n_estimators=200;, score=0.958 total time=  25.3s
+[CV 3/5] END ..................n_estimators=200;, score=0.951 total time=  25.4s
+[CV 5/5] END ..................n_estimators=300;, score=0.960 total time=  29.7s
+[CV 3/5] END ..................n_estimators=300;, score=0.951 total time=  32.6s
+[CV 2/5] END ..................n_estimators=300;, score=0.955 total time=  35.3s
+[CV 1/5] END ..................n_estimators=300;, score=0.940 total time=  36.9s
+[CV 4/5] END ..................n_estimators=300;, score=0.944 total time=  34.4s
+{'n_estimators': 300}
+Classification report:
+                                precision    recall  f1-score   support
+
+          aceleracao_agressiva       0.94      0.98      0.96       414
+       curva_direita_agressiva       0.96      1.00      0.98       387
+      curva_esquerda_agressiva       0.98      0.99      0.99       365
+          evento_nao_agressivo       0.93      0.94      0.94       480
+              freada_agressiva       0.99      0.95      0.97       309
+ troca_faixa_direita_agressiva       1.00      0.84      0.91        94
+troca_faixa_esquerda_agressiva       0.99      0.82      0.90        84
+
+                      accuracy                           0.96      2133
+                     macro avg       0.97      0.93      0.95      2133
+                  weighted avg       0.96      0.96      0.96      2133
+
+Classification report (SVC):
+                                precision    recall  f1-score   support
+
+          aceleracao_agressiva       0.94      0.94      0.94       414
+       curva_direita_agressiva       0.97      1.00      0.98       387
+      curva_esquerda_agressiva       0.99      0.98      0.99       365
+          evento_nao_agressivo       0.91      0.94      0.92       480
+              freada_agressiva       1.00      0.94      0.97       309
+ troca_faixa_direita_agressiva       0.98      0.94      0.96        94
+troca_faixa_esquerda_agressiva       0.91      0.85      0.88        84
+
+                      accuracy                           0.96      2133
+                     macro avg       0.96      0.94      0.95      2133
+                  weighted avg       0.96      0.96      0.96      2133
+
+Classification report (SVC scaled):
+                                precision    recall  f1-score   support
+
+          aceleracao_agressiva       0.89      0.90      0.90       414
+       curva_direita_agressiva       0.92      0.98      0.95       387
+      curva_esquerda_agressiva       0.96      0.96      0.96       365
+          evento_nao_agressivo       0.88      0.89      0.88       480
+              freada_agressiva       0.96      0.93      0.95       309
+ troca_faixa_direita_agressiva       0.85      0.73      0.79        94
+troca_faixa_esquerda_agressiva       0.81      0.74      0.77        84
+
+                      accuracy                           0.91      2133
+                     macro avg       0.90      0.88      0.89      2133
+                  weighted avg       0.91      0.91      0.91      2133
+
+Fitting 5 folds for each of 12 candidates, totalling 60 fits
+[CV 3/5] END .....C=0.1, gamma=0.01, kernel=rbf;, score=0.809 total time=   9.2s
+[CV 1/5] END .....C=0.1, gamma=0.01, kernel=rbf;, score=0.788 total time=  10.2s
+[CV 2/5] END ....C=0.1, gamma=0.001, kernel=rbf;, score=0.543 total time=  13.3s
+[CV 2/5] END .....C=0.1, gamma=0.01, kernel=rbf;, score=0.801 total time=  13.4s
+[CV 5/5] END .....C=0.1, gamma=0.01, kernel=rbf;, score=0.791 total time=  14.0s
+[CV 4/5] END .....C=0.1, gamma=0.01, kernel=rbf;, score=0.779 total time=  14.6s
+[CV 1/5] END ....C=0.1, gamma=0.001, kernel=rbf;, score=0.550 total time=  21.9s
+[CV 5/5] END ......C=0.1, gamma=0.1, kernel=rbf;, score=0.601 total time=  25.1s
+[CV 2/5] END ......C=0.1, gamma=0.1, kernel=rbf;, score=0.594 total time=  25.3s
+[CV 3/5] END ......C=0.1, gamma=0.1, kernel=rbf;, score=0.610 total time=  27.9s
+[CV 3/5] END ....C=0.1, gamma=0.001, kernel=rbf;, score=0.564 total time=  21.2s
+[CV 1/5] END ......C=0.1, gamma=0.1, kernel=rbf;, score=0.593 total time=  31.6s
+[CV 4/5] END ......C=0.1, gamma=0.1, kernel=rbf;, score=0.602 total time=  35.5s
+[CV 1/5] END .......C=1, gamma=0.01, kernel=rbf;, score=0.879 total time=  12.2s
+[CV 2/5] END ........C=1, gamma=0.1, kernel=rbf;, score=0.803 total time=  26.1s
+[CV 3/5] END .......C=1, gamma=0.01, kernel=rbf;, score=0.908 total time=  10.7s
+[CV 4/5] END .......C=1, gamma=0.01, kernel=rbf;, score=0.877 total time=  10.7s
+[CV 2/5] END .......C=1, gamma=0.01, kernel=rbf;, score=0.902 total time=  15.3s
+[CV 5/5] END ....C=0.1, gamma=0.001, kernel=rbf;, score=0.551 total time=  29.9s
+[CV 3/5] END ........C=1, gamma=0.1, kernel=rbf;, score=0.826 total time=  30.2s
+[CV 1/5] END ......C=1, gamma=0.001, kernel=rbf;, score=0.760 total time=   8.3s
+[CV 5/5] END .......C=1, gamma=0.01, kernel=rbf;, score=0.883 total time=  10.6s
+[CV 4/5] END ....C=0.1, gamma=0.001, kernel=rbf;, score=0.538 total time=  36.9s
+[CV 3/5] END ......C=1, gamma=0.001, kernel=rbf;, score=0.781 total time=   7.5s
+[CV 4/5] END ......C=1, gamma=0.001, kernel=rbf;, score=0.741 total time=   8.7s
+[CV 1/5] END ......C=10, gamma=0.01, kernel=rbf;, score=0.926 total time=   4.5s
+[CV 2/5] END ......C=10, gamma=0.01, kernel=rbf;, score=0.936 total time=   4.7s
+[CV 3/5] END ......C=10, gamma=0.01, kernel=rbf;, score=0.941 total time=   4.7s
+[CV 4/5] END ........C=1, gamma=0.1, kernel=rbf;, score=0.813 total time=  36.9s
+[CV 1/5] END ........C=1, gamma=0.1, kernel=rbf;, score=0.817 total time=  48.2s
+[CV 5/5] END ......C=10, gamma=0.01, kernel=rbf;, score=0.935 total time=   4.7s
+[CV 4/5] END ......C=10, gamma=0.01, kernel=rbf;, score=0.930 total time=   7.4s
+[CV 2/5] END ......C=1, gamma=0.001, kernel=rbf;, score=0.772 total time=  25.9s
+[CV 3/5] END .....C=10, gamma=0.001, kernel=rbf;, score=0.865 total time=   5.3s
+[CV 2/5] END .....C=10, gamma=0.001, kernel=rbf;, score=0.856 total time=   6.7s
+[CV 5/5] END ......C=1, gamma=0.001, kernel=rbf;, score=0.758 total time=  26.5s
+[CV 5/5] END ........C=1, gamma=0.1, kernel=rbf;, score=0.807 total time=  44.6s
+[CV 4/5] END .....C=10, gamma=0.001, kernel=rbf;, score=0.829 total time=   7.1s
+[CV 1/5] END .....C=10, gamma=0.001, kernel=rbf;, score=0.834 total time=  15.3s
+[CV 5/5] END .......C=10, gamma=0.1, kernel=rbf;, score=0.824 total time=  29.0s
+[CV 5/5] END .....C=10, gamma=0.001, kernel=rbf;, score=0.843 total time=  13.1s
+[CV 1/5] END .....C=100, gamma=0.01, kernel=rbf;, score=0.941 total time=   7.1s
+[CV 2/5] END .......C=10, gamma=0.1, kernel=rbf;, score=0.821 total time=  37.8s
+[CV 1/5] END .......C=10, gamma=0.1, kernel=rbf;, score=0.835 total time=  40.6s
+[CV 4/5] END .....C=100, gamma=0.01, kernel=rbf;, score=0.936 total time=   4.9s
+[CV 5/5] END .....C=100, gamma=0.01, kernel=rbf;, score=0.943 total time=   5.3s
+[CV 1/5] END ....C=100, gamma=0.001, kernel=rbf;, score=0.890 total time=   4.3s
+[CV 2/5] END .....C=100, gamma=0.01, kernel=rbf;, score=0.940 total time=  12.8s
+[CV 2/5] END ....C=100, gamma=0.001, kernel=rbf;, score=0.907 total time=   4.6s
+[CV 3/5] END ....C=100, gamma=0.001, kernel=rbf;, score=0.909 total time=   4.7s
+[CV 4/5] END .......C=10, gamma=0.1, kernel=rbf;, score=0.824 total time=  48.2s
+[CV 4/5] END ....C=100, gamma=0.001, kernel=rbf;, score=0.882 total time=   6.9s
+[CV 3/5] END .......C=10, gamma=0.1, kernel=rbf;, score=0.843 total time=  49.6s
+[CV 3/5] END .....C=100, gamma=0.01, kernel=rbf;, score=0.943 total time=  16.8s
+[CV 1/5] END ......C=100, gamma=0.1, kernel=rbf;, score=0.835 total time=  29.2s
+[CV 2/5] END ......C=100, gamma=0.1, kernel=rbf;, score=0.820 total time=  29.1s
+[CV 5/5] END ....C=100, gamma=0.001, kernel=rbf;, score=0.890 total time=   9.9s
+[CV 4/5] END ......C=100, gamma=0.1, kernel=rbf;, score=0.822 total time=  29.3s
+[CV 3/5] END ......C=100, gamma=0.1, kernel=rbf;, score=0.845 total time=  29.6s
+[CV 5/5] END ......C=100, gamma=0.1, kernel=rbf;, score=0.825 total time=  30.0s
+Classification report (SVC):
+                                precision    recall  f1-score   support
+
+          aceleracao_agressiva       0.94      0.94      0.94       414
+       curva_direita_agressiva       0.97      1.00      0.98       387
+      curva_esquerda_agressiva       0.99      0.98      0.99       365
+          evento_nao_agressivo       0.91      0.94      0.92       480
+              freada_agressiva       1.00      0.94      0.97       309
+ troca_faixa_direita_agressiva       0.98      0.94      0.96        94
+troca_faixa_esquerda_agressiva       0.91      0.85      0.88        84
+
+                      accuracy                           0.96      2133
+                     macro avg       0.96      0.94      0.95      2133
+                  weighted avg       0.96      0.96      0.96      2133
+
+Classification report (SVC scaled):
+                                precision    recall  f1-score   support
+
+          aceleracao_agressiva       0.89      0.90      0.90       414
+       curva_direita_agressiva       0.92      0.98      0.95       387
+      curva_esquerda_agressiva       0.96      0.96      0.96       365
+          evento_nao_agressivo       0.88      0.89      0.88       480
+              freada_agressiva       0.96      0.93      0.95       309
+ troca_faixa_direita_agressiva       0.85      0.73      0.79        94
+troca_faixa_esquerda_agressiva       0.81      0.74      0.77        84
+
+                      accuracy                           0.91      2133
+                     macro avg       0.90      0.88      0.89      2133
+                  weighted avg       0.91      0.91      0.91      2133
+
+{'C': 100, 'gamma': 0.01, 'kernel': 'rbf'}
+Classification report (SVC):
+                                precision    recall  f1-score   support
+
+          aceleracao_agressiva       0.94      0.94      0.94       414
+       curva_direita_agressiva       0.97      1.00      0.98       387
+      curva_esquerda_agressiva       0.99      0.98      0.99       365
+          evento_nao_agressivo       0.91      0.94      0.92       480
+              freada_agressiva       1.00      0.94      0.97       309
+ troca_faixa_direita_agressiva       0.98      0.94      0.96        94
+troca_faixa_esquerda_agressiva       0.91      0.85      0.88        84
+
+                      accuracy                           0.96      2133
+                     macro avg       0.96      0.94      0.95      2133
+                  weighted avg       0.96      0.96      0.96      2133
+
+Classification report (SVC scaled):
+                                precision    recall  f1-score   support
+
+          aceleracao_agressiva       0.89      0.90      0.90       414
+       curva_direita_agressiva       0.92      0.98      0.95       387
+      curva_esquerda_agressiva       0.96      0.96      0.96       365
+          evento_nao_agressivo       0.88      0.89      0.88       480
+              freada_agressiva       0.96      0.93      0.95       309
+ troca_faixa_direita_agressiva       0.85      0.73      0.79        94
+troca_faixa_esquerda_agressiva       0.81      0.74      0.77        84
+
+                      accuracy                           0.91      2133
+                     macro avg       0.90      0.88      0.89      2133
+                  weighted avg       0.91      0.91      0.91      2133
+
+Classification report (SVC scaled):
+                                precision    recall  f1-score   support
+
+          aceleracao_agressiva       0.94      0.94      0.94       414
+       curva_direita_agressiva       0.97      1.00      0.98       387
+      curva_esquerda_agressiva       0.99      0.98      0.99       365
+          evento_nao_agressivo       0.91      0.94      0.92       480
+              freada_agressiva       1.00      0.94      0.97       309
+ troca_faixa_direita_agressiva       0.98      0.94      0.96        94
+troca_faixa_esquerda_agressiva       0.91      0.85      0.88        84
+
+                      accuracy                           0.96      2133
+                     macro avg       0.96      0.94      0.95      2133
+                  weighted avg       0.96      0.96      0.96      2133
+
+Classification report (SVC non-scaled):
+                                precision    recall  f1-score   support
+
+          aceleracao_agressiva       0.89      0.90      0.90       414
+       curva_direita_agressiva       0.92      0.98      0.95       387
+      curva_esquerda_agressiva       0.96      0.96      0.96       365
+          evento_nao_agressivo       0.88      0.89      0.88       480
+              freada_agressiva       0.96      0.93      0.95       309
+ troca_faixa_direita_agressiva       0.85      0.73      0.79        94
+troca_faixa_esquerda_agressiva       0.81      0.74      0.77        84
+
+                      accuracy                           0.91      2133
+                     macro avg       0.90      0.88      0.89      2133
+                  weighted avg       0.91      0.91      0.91      2133
+
+**Classification report (XGB):**
+              precision    recall  f1-score   support
+
+           0       0.95      0.99      0.97       414
+           1       0.98      1.00      0.99       387
+           2       0.99      0.99      0.99       365
+           3       0.95      0.95      0.95       480
+           4       1.00      0.97      0.99       309
+           5       0.98      0.90      0.94        94
+           6       0.97      0.89      0.93        84
+
+    accuracy                           0.97      2133
+   macro avg       0.98      0.96      0.97      2133
+weighted avg       0.97      0.97      0.97      2133
+
+**Classes:**
+
+0: aceleracao_agressiva
+1: curva_direita_agressiva
+2: curva_esquerda_agressiva
+3: evento_nao_agressivo
+4: freada_agressiva
+5: troca_faixa_direita_agressiva
+6: troca_faixa_esquerda_agressiva
+**Classification report (XGB):**
+              precision    recall  f1-score   support
+
+           0       0.96      0.99      0.98       414
+           1       0.99      1.00      0.99       387
+           2       0.99      0.99      0.99       365
+           3       0.97      0.97      0.97       480
+           4       1.00      0.98      0.99       309
+           5       0.99      0.93      0.96        94
+           6       0.97      0.93      0.95        84
+
+    accuracy                           0.98      2133
+   macro avg       0.98      0.97      0.98      2133
+weighted avg       0.98      0.98      0.98      2133
+
+**Classes:**
+
+0: aceleracao_agressiva
+1: curva_direita_agressiva
+2: curva_esquerda_agressiva
+3: evento_nao_agressivo
+4: freada_agressiva
+5: troca_faixa_direita_agressiva
+6: troca_faixa_esquerda_agressiva
+**Classification report (XGB):**
+              precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98       414
+           1       0.99      1.00      0.99       387
+           2       0.99      0.99      0.99       365
+           3       0.98      0.97      0.98       480
+           4       1.00      0.99      0.99       309
+           5       0.99      0.93      0.96        94
+           6       0.98      0.94      0.96        84
+
+    accuracy                           0.98      2133
+   macro avg       0.98      0.97      0.98      2133
+weighted avg       0.98      0.98      0.98      2133
+
+**Classes:**
+
+0: aceleracao_agressiva
+1: curva_direita_agressiva
+2: curva_esquerda_agressiva
+3: evento_nao_agressivo
+4: freada_agressiva
+5: troca_faixa_direita_agressiva
+6: troca_faixa_esquerda_agressiva
+/home/renan/.local/lib/python3.10/site-packages/sklearn/neural_network/_multilayer_perceptron.py:698: UserWarning: Training interrupted by user.
+  warnings.warn("Training interrupted by user.")
+**Classification report (MLP):**
+                                precision    recall  f1-score   support
+
+          aceleracao_agressiva       0.97      0.93      0.95       414
+       curva_direita_agressiva       0.98      1.00      0.99       387
+      curva_esquerda_agressiva       0.99      0.99      0.99       365
+          evento_nao_agressivo       0.89      0.96      0.93       480
+              freada_agressiva       1.00      0.96      0.98       309
+ troca_faixa_direita_agressiva       0.99      0.88      0.93        94
+troca_faixa_esquerda_agressiva       0.96      0.83      0.89        84
+
+                      accuracy                           0.96      2133
+                     macro avg       0.97      0.94      0.95      2133
+                  weighted avg       0.96      0.96      0.96      2133
+/home/renan/.local/lib/python3.10/site-packages/sklearn/neural_network/_multilayer_perceptron.py:698: UserWarning: Training interrupted by user.
+  warnings.warn("Training interrupted by user.")
+
+**Classification report (MLP):**
+                                precision    recall  f1-score   support
+
+          aceleracao_agressiva       0.97      0.93      0.95       414
+       curva_direita_agressiva       0.98      1.00      0.99       387
+      curva_esquerda_agressiva       0.99      0.99      0.99       365
+          evento_nao_agressivo       0.89      0.96      0.93       480
+              freada_agressiva       1.00      0.96      0.98       309
+ troca_faixa_direita_agressiva       0.99      0.88      0.93        94
+troca_faixa_esquerda_agressiva       0.96      0.83      0.89        84
+
+                      accuracy                           0.96      2133
+                     macro avg       0.97      0.94      0.95      2133
+                  weighted avg       0.96      0.96      0.96      2133
+
+**Classification report (MLP):**
+                                precision    recall  f1-score   support
+
+          aceleracao_agressiva       0.96      0.98      0.97       414
+       curva_direita_agressiva       0.99      0.99      0.99       387
+      curva_esquerda_agressiva       0.99      0.99      0.99       365
+          evento_nao_agressivo       0.95      0.96      0.96       480
+              freada_agressiva       1.00      0.98      0.99       309
+ troca_faixa_direita_agressiva       0.93      0.88      0.91        94
+troca_faixa_esquerda_agressiva       0.95      0.89      0.92        84
+
+                      accuracy                           0.97      2133
+                     macro avg       0.97      0.96      0.96      2133
+                  weighted avg       0.97      0.97      0.97      2133
+2025-01-27 16:33:14.442161: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-01-27 16:33:14.449095: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2025-01-27 16:33:14.508953: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2025-01-27 16:33:14.559420: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1738006394.603574    7822 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1738006394.615761    7822 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-01-27 16:33:14.744781: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/home/renan/.local/lib/python3.10/site-packages/keras/src/layers/core/dense.py:87: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+W0000 00:00:1738006401.417932    7822 gpu_device.cc:2344] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+
+Epoch 1/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m3s[0m 12ms/step - accuracy: 0.5262 - loss: 1.3825 - val_accuracy: 0.8401 - val_loss: 0.4938
+Epoch 2/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 11ms/step - accuracy: 0.7871 - loss: 0.6271 - val_accuracy: 0.8870 - val_loss: 0.3523
+Epoch 3/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 11ms/step - accuracy: 0.8412 - loss: 0.4734 - val_accuracy: 0.8987 - val_loss: 0.2952
+Epoch 4/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 11ms/step - accuracy: 0.8734 - loss: 0.3635 - val_accuracy: 0.9156 - val_loss: 0.2431
+Epoch 5/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 10ms/step - accuracy: 0.8980 - loss: 0.2939 - val_accuracy: 0.9250 - val_loss: 0.2333
+Epoch 6/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 11ms/step - accuracy: 0.9075 - loss: 0.2848 - val_accuracy: 0.9245 - val_loss: 0.2251
+Epoch 7/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 11ms/step - accuracy: 0.9149 - loss: 0.2388 - val_accuracy: 0.9344 - val_loss: 0.2108
+Epoch 8/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 11ms/step - accuracy: 0.9292 - loss: 0.2159 - val_accuracy: 0.9362 - val_loss: 0.2011
+Epoch 9/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 11ms/step - accuracy: 0.9306 - loss: 0.1998 - val_accuracy: 0.9320 - val_loss: 0.1981
+Epoch 10/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 10ms/step - accuracy: 0.9290 - loss: 0.2099 - val_accuracy: 0.9433 - val_loss: 0.1765
+Epoch 11/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 10ms/step - accuracy: 0.9428 - loss: 0.1729 - val_accuracy: 0.9536 - val_loss: 0.1567
+Epoch 12/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 11ms/step - accuracy: 0.9386 - loss: 0.1795 - val_accuracy: 0.9405 - val_loss: 0.1865
+Epoch 13/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 12ms/step - accuracy: 0.9447 - loss: 0.1611 - val_accuracy: 0.9498 - val_loss: 0.1645
+Epoch 14/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 11ms/step - accuracy: 0.9509 - loss: 0.1464 - val_accuracy: 0.9494 - val_loss: 0.1786
+Epoch 15/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 11ms/step - accuracy: 0.9583 - loss: 0.1217 - val_accuracy: 0.9573 - val_loss: 0.1579
+Epoch 16/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 10ms/step - accuracy: 0.9553 - loss: 0.1318 - val_accuracy: 0.9564 - val_loss: 0.1501
+Epoch 17/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 11ms/step - accuracy: 0.9636 - loss: 0.1094 - val_accuracy: 0.9583 - val_loss: 0.1446
+Epoch 18/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 10ms/step - accuracy: 0.9612 - loss: 0.1070 - val_accuracy: 0.9578 - val_loss: 0.1534
+Epoch 19/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 11ms/step - accuracy: 0.9647 - loss: 0.1071 - val_accuracy: 0.9550 - val_loss: 0.1828
+Epoch 20/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 10ms/step - accuracy: 0.9633 - loss: 0.1067 - val_accuracy: 0.9573 - val_loss: 0.1561
+Epoch 21/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 10ms/step - accuracy: 0.9598 - loss: 0.1148 - val_accuracy: 0.9644 - val_loss: 0.1302
+Epoch 22/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 12ms/step - accuracy: 0.9659 - loss: 0.1012 - val_accuracy: 0.9611 - val_loss: 0.1386
+Epoch 23/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 12ms/step - accuracy: 0.9693 - loss: 0.0923 - val_accuracy: 0.9606 - val_loss: 0.1453
+Epoch 24/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m1s[0m 10ms/step - accuracy: 0.9708 - loss: 0.0813 - val_accuracy: 0.9573 - val_loss: 0.1572
+Epoch 25/25
+[1m134/134[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m2s[0m 12ms/step - accuracy: 0.9753 - loss: 0.0753 - val_accuracy: 0.9583 - val_loss: 0.1331
+Acurácia final: 97.069%
+Loss final: 8.617%
+[1m67/67[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 4ms/step
+**Classification report (MLP):**
+              precision    recall  f1-score   support
+
+           0       0.97      0.95      0.96       414
+           1       0.98      0.98      0.98       387
+           2       0.98      1.00      0.99       365
+           3       0.93      0.93      0.93       480
+           4       0.99      0.95      0.97       309
+           5       0.96      0.90      0.93        94
+           6       0.81      0.93      0.87        84
+
+    accuracy                           0.96      2133
+   macro avg       0.94      0.95      0.95      2133
+weighted avg       0.96      0.96      0.96      2133
+
+Create sweep with ID: jsx222eb
+Sweep URL: https://wandb.ai/renan-florencio-unicamp/DriverBehavior/sweeps/jsx222eb
+Create sweep with ID: o5p37964
+Sweep URL: https://wandb.ai/renan-florencio-unicamp/DriverBehavior/sweeps/o5p37964
+Create sweep with ID: em70sb0h
+Sweep URL: https://wandb.ai/renan-florencio-unicamp/DriverBehavior/sweeps/em70sb0h
+Create sweep with ID: puqbmdsf
+Sweep URL: https://wandb.ai/renan-florencio-unicamp/DriverBehavior/sweeps/puqbmdsf
+Create sweep with ID: ip7i2h5u
+Sweep URL: https://wandb.ai/renan-florencio-unicamp/DriverBehavior/sweeps/ip7i2h5u
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.login() after wandb.init() has no effect.

@@ -1,0 +1,16 @@
+{"time":"2025-01-27T17:05:50.122869456-03:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/home/renan/Documents/datasets/dbdataset/wandb/run-20250127_170549-wa0u51qj/logs/debug-core.log"}
+{"time":"2025-01-27T17:05:50.226579027-03:00","level":"INFO","msg":"created new stream","id":"wa0u51qj"}
+{"time":"2025-01-27T17:05:50.226639803-03:00","level":"INFO","msg":"stream: started","id":"wa0u51qj"}
+{"time":"2025-01-27T17:05:50.226718505-03:00","level":"INFO","msg":"writer: Do: started","stream_id":"wa0u51qj"}
+{"time":"2025-01-27T17:05:50.22681775-03:00","level":"INFO","msg":"handler: started","stream_id":"wa0u51qj"}
+{"time":"2025-01-27T17:05:50.226816841-03:00","level":"INFO","msg":"sender: started","stream_id":"wa0u51qj"}
+{"time":"2025-01-27T17:05:50.531068373-03:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-27T17:06:13.853523136-03:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-27T17:06:13.854070694-03:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-27T17:06:14.690879472-03:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-27T17:06:14.855268157-03:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-0, summary, console lines 13-19","runtime_seconds":0.164172314}],"total_operations":1}}
+{"time":"2025-01-27T17:06:16.018258356-03:00","level":"INFO","msg":"stream: closing","id":"wa0u51qj"}
+{"time":"2025-01-27T17:06:16.018289716-03:00","level":"INFO","msg":"handler: closed","stream_id":"wa0u51qj"}
+{"time":"2025-01-27T17:06:16.018305762-03:00","level":"INFO","msg":"writer: Close: closed","stream_id":"wa0u51qj"}
+{"time":"2025-01-27T17:06:16.01837585-03:00","level":"INFO","msg":"sender: closed","stream_id":"wa0u51qj"}
+{"time":"2025-01-27T17:06:16.018466762-03:00","level":"INFO","msg":"stream: closed","id":"wa0u51qj"}
